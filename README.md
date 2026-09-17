@@ -107,8 +107,6 @@ A conversa também ajudou o grupo a compreender melhor a identidade da empresa e
 
 ![Imagem realizada na loja](imagens/nosNaLoja.jpeg)
 
-A imagem permite identificar a realização do contato com o responsável pela organização.
-
 ## Conclusão
 
 A primeira etapa do projeto permitiu ao grupo desenvolver a base estrutural de um website utilizando HTML5, sem depender de estilização visual ou recursos avançados de CSS.
