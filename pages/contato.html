@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Entre em contato com a Personal Pisos e Carpetes, consulte localização, horários e envie sua mensagem.">
+  <title>Contato | Personal Pisos e Carpetes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../Css/style.css">
+  <link rel="icon" href="../imagens/Logo.jpeg" type="image/jpeg">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a class="marca-site" href="../index.html">
+        <img src="../imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
+        <span>Personal<small>Pisos e Carpetes</small></span>
+      </a>
+      <ul class="menu">
+        <li><a href="../index.html" class="menu-link">Início</a></li>
+        <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+        <li><a href="pisos-laminados.html" class="menu-link">Laminados</a></li>
+        <li><a href="pisos-vinilicos.html" class="menu-link">Vinílicos</a></li>
+        <li><a href="carpetes-tapetes.html" class="menu-link">Carpetes</a></li>
+        <li><a href="papeis-de-parede.html" class="menu-link">Papéis de parede</a></li>
+        <li><a href="persianas.html" class="menu-link">Persianas</a></li>
+        <li><a href="rodapes.html" class="menu-link">Rodapés</a></li>
+        <li><a href="projetos-servicos.html" class="menu-link">Serviços</a></li>
+        <li><a href="orcamento.html" class="menu-link">Orçamento</a></li>
+        <li><a href="contato.html" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+
+    <section class="page-banner" aria-labelledby="titulo-contato">
+      <div class="container">
+        <p class="breadcrumb">Atendimento</p>
+        <h1 class="titulo-pagina" id="titulo-contato">Fale conosco</h1>
+        <p>Envie seus dados e conte o que você procura. A equipe Personal retornará para orientar os próximos passos.
+        </p>
+      </div>
+    </section>
+    <section class="secao secao-clara" aria-labelledby="titulo-formulario-contato">
+      <div class="container grade-contato">
+        <article>
+          <p class="kicker">Contato</p>
+          <h2 class="titulo-secao" id="titulo-formulario-contato">Estamos prontos para ouvir você.</h2>
+          
+          <ul class="lista-contato">
+            <li>
+              <strong>Telefone</strong>
+              <a href="tel:+551129227695">(11) 2922-7695</a>
+            </li>
+            <li>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5511976970440" target="_blank" rel="noopener noreferrer">(11) 97697-0440</a>
+            </li>
+            <li>
+              <strong>Horário de funcionamento</strong>
+              <span>Segunda a sexta, das 8h às 17h.<br>Sábado, das 9h às 14h.</span>
+            </li>
+            <li>
+              <strong>Endereço</strong>
+              <address>Rua Guaiaúna, nº 537<br>Penha de França, São Paulo - SP</address>
+            </li>
+            <li>
+              <div class="social-box">
+              <h3><strong>Nossas Redes Sociais</strong></h3>
+              <div class="social-links">
+                  <a href="https://www.instagram.com/personalpisos" target="_blank" title="Instagram"> 
+                  <img src="../imagens/logoinsta.png" alt="Instagram" width="30" style="display: inline-block;"/>
+                </a>
+
+                <a href="https://www.facebook.com/personalpisos" target="_blank" title="Facebook">
+                  <img src="../imagens/logoface.png" alt="Facebook" width="30" style="display: inline-block;"/>
+                </a>
+              </div>
+            </div>
+            </li>
+          </ul>
+        </article>
+        <form class="formulario-contato" action="#" method="post">
+          <fieldset>
+            <legend>Envie uma mensagem</legend>
+            <div class="campo-grid">
+              <p class="campo"><label for="nome">Nome completo</label><input type="text" id="nome" name="nome"
+                  placeholder="Ex.: Ana Souza" minlength="3" maxlength="100" autocomplete="name" required></p>
+              <p class="campo"><label for="email">E-mail</label><input type="email" id="email" name="email"
+                  placeholder="voce@exemplo.com" maxlength="120" autocomplete="email" required></p>
+            </div>
+            <div class="campo-grid">
+              <p class="campo"><label for="telefone">Telefone</label><input type="tel" id="telefone" name="telefone"
+                  placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" minlength="15" maxlength="15"
+                  inputmode="tel" autocomplete="tel" required><span class="ajuda-campo">Formato: (11) 99999-9999</span>
+              </p>
+              <p class="campo"><label for="cpf">CPF</label><input type="text" id="cpf" name="cpf"
+                  placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" minlength="14" maxlength="14"
+                  inputmode="numeric" autocomplete="off" required><span class="ajuda-campo">Formato:
+                  000.000.000-00</span></p>
+            </div>
+
+            <p class="campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem"
+                placeholder="Conte brevemente sobre o seu ambiente ou projeto." minlength="20" maxlength="1000"
+                required></textarea></p><button class="botao" type="submit">Enviar mensagem</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="secao secao-cinza" aria-labelledby="titulo-localizacao">
+      <div class="container">
+        <p class="kicker">Onde estamos</p>
+        <h2 class="titulo-secao" id="titulo-localizacao">Visite a Personal em São Paulo.</h2>
+        <div class="grade-contato">
+          <section class="cartao-informacao">
+            <h2>Endereço e atendimento</h2>
+            <address>
+              <p>Rua Guaiaúna, nº 537<br>Penha de França<br>São Paulo – SP<br>CEP 03631-000</p>
+              <p><strong>Referência:</strong> região da Penha.</p><a class="link-seta"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Guaiauna+537+Penha+de+Franca+Sao+Paulo"
+                target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+            </address>
+          </section>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0232862845314!2d-46.55098722478956!3d-23.53166486050159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e5b969ea411%3A0x7edd13f1466b8a98!2sRua%20Guaia%C3%BAna%2C%20537%20-%20Penha%20de%20Fran%C3%A7a%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003631-000!5e0!3m2!1spt-BR!2sbr!4v1787178551902!5m2!1spt-BR!2sbr"
+              title="Localização da Personal Pisos e Carpetes no Google Maps" width="600" height="450" style="border: 0" allowfullscreen loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <section class="rodape-grid" aria-labelledby="titulo-rodape">
+        <article>
+          <h2 id="titulo-rodape">Personal Pisos e Carpetes</h2>
+          <p>Há mais de 16 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
+          <p><a class="link-seta" href="contato.html">Fale com a nossa equipe</a></p>
+        </article>
+        <nav aria-label="Navegação complementar">
+          <h3>Explore</h3>
+          <ul class="rodape-menu">
+            <li><a href="sobre.html">Sobre a Personal</a></li>
+            <li><a href="projetos-servicos.html">Projetos e serviços</a></li>
+            <li><a href="orcamento.html">Solicitar orçamento</a></li>
+            <li><a href="contato.html">Onde estamos</a></li>
+          </ul>
+        </nav>
+        <section>
+          <h3>Atendimento</h3>
+          <address>
+            <p>Rua Guaiaúna, 537<br>Penha de França, São Paulo – SP</p>
+            <p><a href="tel:+551129227695">(11) 2922-7695</a><br><a href="https://wa.me/5511976970440" target="_blank"
+                rel="noopener noreferrer">WhatsApp: (11) 97697-0440</a></p>
+          </address>
+        </section>
+      </section>
+       <div class="rodape-base">
+        <p>© 2000–2026 Personal Pisos e Carpetes. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+
+</html>

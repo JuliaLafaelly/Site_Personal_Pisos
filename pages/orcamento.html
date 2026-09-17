@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Solicite um orçamento de pisos, carpetes, persianas, papéis de parede, rodapés e serviços da Personal.">
+  <title>Orçamento | Personal Pisos e Carpetes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../Css/style.css">
+  <link rel="icon" href="../imagens/Logo.jpeg" type="image/jpeg">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a class="marca-site" href="../index.html">
+        <img src="../imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
+        <span>Personal<small>Pisos e Carpetes</small></span>
+      </a>
+      <ul class="menu">
+        <li><a href="../index.html" class="menu-link">Início</a></li>
+        <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+        <li><a href="pisos-laminados.html" class="menu-link">Laminados</a></li>
+        <li><a href="pisos-vinilicos.html" class="menu-link">Vinílicos</a></li>
+        <li><a href="carpetes-tapetes.html" class="menu-link">Carpetes</a></li>
+        <li><a href="papeis-de-parede.html" class="menu-link">Papéis de parede</a></li>
+        <li><a href="persianas.html" class="menu-link">Persianas</a></li>
+        <li><a href="rodapes.html" class="menu-link">Rodapés</a></li>
+        <li><a href="projetos-servicos.html" class="menu-link">Serviços</a></li>
+        <li><a href="orcamento.html" class="menu-link">Orçamento</a></li>
+        <li><a href="contato.html" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+
+    <section class="page-banner" aria-labelledby="titulo-orcamento">
+      <div class="container">
+        <p class="breadcrumb">Planeje seu ambiente</p>
+        <h1 class="titulo-pagina" id="titulo-orcamento">Solicite um orçamento</h1>
+        <p>Compartilhe as informações iniciais para que possamos entender o escopo e preparar uma orientação mais
+          adequada.</p>
+      </div>
+    </section>
+    <section class="secao secao-clara" aria-labelledby="titulo-formulario-orcamento">
+      <div class="container grade-contato">
+        <article>
+          <p class="kicker">Primeiro passo</p>
+          <h2 class="titulo-secao" id="titulo-formulario-orcamento">Quanto mais contexto, melhor a nossa indicação.</h2>
+          <p>Você não precisa ter todas as medidas neste primeiro contato. Informe o que já sabe, escolha o tipo de
+            solução e nossa equipe ajudará a organizar as próximas etapas.</p>
+          <aside class="catalogo-destaque">
+            <h2>Atendimento personalizado</h2>
+            <p>Depois do envio, podemos conversar sobre medidas, referências visuais, prazos e opções de acabamento.</p>
+          </aside>
+        </article>
+
+        <form class="formulario" action="#" method="post">
+          <fieldset>
+            <legend>Dados do projeto</legend>
+            <div class="campo-grid">
+              <p class="campo"><label for="orcamento-nome">Nome completo</label><input type="text" id="orcamento-nome"
+                  name="nome" placeholder="Ex.: Carlos Oliveira" minlength="3" maxlength="100" autocomplete="name"
+                  required></p>
+              <p class="campo"><label for="orcamento-email">E-mail</label><input type="email" id="orcamento-email"
+                  name="email" placeholder="email@gmail.com" maxlength="120" autocomplete="email" required></p>
+            </div>
+
+<!--Começei aqui(GC)-->
+
+<div class="campo-grid" style="display: flex; gap: 15px; align-items: flex-start; width: 100%;">
+  
+  <!-- Campo  do Telefone(Ajustando altura da label pra ficar igual o original) -->
+  <p class="campo" style="flex: 1; margin: 0;">
+    <label for="orcamento-telefone" style="display: block; margin-bottom: 5px;">Telefone</label> 
+    <input type="tel" id="orcamento-telefone"
+      name="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" minlength="15"
+      maxlength="15" inputmode="tel" autocomplete="tel" required style="width: 100%; padding: 10px; box-sizing: border-box;">
+  </p>
+
+  <!-- Campo Produto ou Serviço(O mesmo de cima, so que arrumando alguns erros encontrados ao colocar do lado da label do telefone) -->
+  <p class="campo" style="flex: 1; margin: 0;">
+    <label for="tipo-produto" style="display: block; margin-bottom: 5px; font-size: 12px; white-space: nowrap;">Produto ou serviço de interesse</label> 
+    <select id="tipo-produto" name="produto" required style="width: 100%; padding: 11px; box-sizing: border-box;">
+      <option value="">Selecione uma opção</option>
+      <option value="pisos-laminados">Pisos laminados</option>
+      <option value="pisos-vinilicos">Pisos vinílicos</option>
+      <option value="carpetes-tapetes">Carpetes e tapetes</option>
+      <option value="papeis-de-parede">Papéis de parede</option>
+      <option value="persianas">Persianas</option>
+      <option value="rodapes">Rodapés</option>
+      <option value="projetos-servicos">Projetos e serviços</option>
+    </select>
+  </p>
+
+</div>
+<br> 
+
+<!--Basicamente o campo de obsservação-->
+
+            <p class="campo">
+  <label for="detalhes-projeto">Conte sobre o projeto</label>
+  <textarea id="detalhes-projeto"
+    name="detalhes"
+    placeholder="Ex.: sala de estar com aproximadamente 25 m² e preferência por tons claros." minlength="20"
+    maxlength="1200"></textarea>
+</p>
+
+<!-- Bloco que centraliza o botão de enviar, no meio -->
+<div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+  <button class="botao" type="submit">Enviar e Conversar com Especialista</button>
+</div>
+
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="secao secao-cinza" aria-labelledby="titulo-orcamento-apoio">
+      <div class="container">
+        <p class="kicker">Ainda está pesquisando?</p>
+        <h2 class="titulo-secao" id="titulo-orcamento-apoio">Veja nossas linhas antes de enviar.</h2>
+        <div class="grade-cartoes">
+          <article class="cartao">
+            <div class="cartao-conteudo">
+              <h3>Pisos e revestimentos</h3>
+              <p>Compare características e possibilidades de aplicação nas páginas de laminados, vinílicos e carpetes.
+              </p><a class="link-seta" href="pisos-laminados.html">Começar pelos laminados</a>
+            </div>
+          </article>
+          <article class="cartao">
+            <div class="cartao-conteudo">
+              <h3>Acabamentos</h3>
+              <p>Descubra como papéis de parede, persianas e rodapés completam a composição.</p><a class="link-seta"
+                href="papeis-de-parede.html">Ver acabamentos</a>
+            </div>
+          </article>
+          <article class="cartao">
+            <div class="cartao-conteudo">
+              <h3>Serviços</h3>
+              <p>Conheça as etapas em que a Personal pode apoiar o seu projeto.</p><a class="link-seta"
+                href="projetos-servicos.html">Conhecer serviços</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <section class="rodape-grid" aria-labelledby="titulo-rodape">
+        <article>
+          <h2 id="titulo-rodape">Personal Pisos e Carpetes</h2>
+          <p>Há mais de 16 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
+          <p><a class="link-seta" href="contato.html">Fale com a nossa equipe</a></p>
+        </article>
+        <nav aria-label="Navegação complementar">
+          <h3>Explore</h3>
+          <ul class="rodape-menu">
+            <li><a href="sobre.html">Sobre a Personal</a></li>
+            <li><a href="projetos-servicos.html">Projetos e serviços</a></li>
+            <li><a href="orcamento.html">Solicitar orçamento</a></li>
+            <li><a href="contato.html">Onde estamos</a></li>
+          </ul>
+        </nav>
+        <section>
+          <h3>Atendimento</h3>
+          <address>
+            <p>Rua Guaiaúna, 537<br>Penha de França, São Paulo – SP</p>
+            <p><a href="tel:+551129227695">(11) 2922-7695</a><br><a href="https://wa.me/5511976970440" target="_blank"
+                rel="noopener noreferrer">WhatsApp: (11) 97697-0440</a></p>
+          </address>
+        </section>
+      </section>
+       <div class="rodape-base">
+        <p>© 2000–2026 Personal Pisos e Carpetes. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+
+</html>
