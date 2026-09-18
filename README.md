@@ -1,4 +1,4 @@
-# Personal Pisos e Carpetes
+# Personal Pisos
 
 ## Integrantes do grupo
 
