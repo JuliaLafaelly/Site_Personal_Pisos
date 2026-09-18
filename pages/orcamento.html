@@ -12,8 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../Css/style.css">
-  <link rel="icon" href="../imagens/Logo.jpeg" type="image/jpeg">
+  <link rel="icon" href="../assets/imagens/Logo.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -21,7 +20,7 @@
   <header class="site-header">
     <nav class="navegacao" aria-label="Navegação principal">
       <a class="marca-site" href="../index.html">
-        <img src="../imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
+        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
         <span>Personal<small>Pisos e Carpetes</small></span>
       </a>
       <ul class="menu">
@@ -73,50 +72,48 @@
                   name="email" placeholder="email@gmail.com" maxlength="120" autocomplete="email" required></p>
             </div>
 
-<!--Começei aqui(GC)-->
+            <!--Começei aqui(GC)-->
 
-<div class="campo-grid" style="display: flex; gap: 15px; align-items: flex-start; width: 100%;">
-  
-  <!-- Campo  do Telefone(Ajustando altura da label pra ficar igual o original) -->
-  <p class="campo" style="flex: 1; margin: 0;">
-    <label for="orcamento-telefone" style="display: block; margin-bottom: 5px;">Telefone</label> 
-    <input type="tel" id="orcamento-telefone"
-      name="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" minlength="15"
-      maxlength="15" inputmode="tel" autocomplete="tel" required style="width: 100%; padding: 10px; box-sizing: border-box;">
-  </p>
+            <div class="campo-grid" style="display: flex; gap: 15px; align-items: flex-start; width: 100%;">
 
-  <!-- Campo Produto ou Serviço(O mesmo de cima, so que arrumando alguns erros encontrados ao colocar do lado da label do telefone) -->
-  <p class="campo" style="flex: 1; margin: 0;">
-    <label for="tipo-produto" style="display: block; margin-bottom: 5px; font-size: 12px; white-space: nowrap;">Produto ou serviço de interesse</label> 
-    <select id="tipo-produto" name="produto" required style="width: 100%; padding: 11px; box-sizing: border-box;">
-      <option value="">Selecione uma opção</option>
-      <option value="pisos-laminados">Pisos laminados</option>
-      <option value="pisos-vinilicos">Pisos vinílicos</option>
-      <option value="carpetes-tapetes">Carpetes e tapetes</option>
-      <option value="papeis-de-parede">Papéis de parede</option>
-      <option value="persianas">Persianas</option>
-      <option value="rodapes">Rodapés</option>
-      <option value="projetos-servicos">Projetos e serviços</option>
-    </select>
-  </p>
+              <!-- Campo  do Telefone(Ajustando altura da label pra ficar igual o original) -->
+              <p class="campo">
+                <label for="orcamento-telefone" style="display: block; margin-bottom: 5px;">Telefone</label>
+                <input type="tel" id="orcamento-telefone" name="telefone" placeholder="(11) 99999-9999"
+                  pattern="\(\d{2}\) \d{5}-\d{4}" minlength="15" maxlength="15" inputmode="tel" autocomplete="tel"
+                  required style="width: 100%; padding: 10px; box-sizing: border-box;">
+              </p>
 
-</div>
-<br> 
+              <!-- Campo Produto ou Serviço(O mesmo de cima, so que arrumando alguns erros encontrados ao colocar do lado da label do telefone) -->
+              <p class="campo">
+                <label for="tipo-produto"
+                  style="display: block; margin-bottom: 5px; font-size: 12px; white-space: nowrap;">Produto ou serviço
+                  de interesse</label>
+                <select id="tipo-produto" name="produto" required
+                  style="width: 100%; padding: 11px; box-sizing: border-box;">
+                  <option value="">Selecione uma opção</option>
+                  <option value="pisos-laminados">Pisos laminados</option>
+                  <option value="pisos-vinilicos">Pisos vinílicos</option>
+                  <option value="carpetes-tapetes">Carpetes e tapetes</option>
+                  <option value="papeis-de-parede">Papéis de parede</option>
+                  <option value="persianas">Persianas</option>
+                  <option value="rodapes">Rodapés</option>
+                  <option value="projetos-servicos">Projetos e serviços</option>
+                </select>
+              </p>
 
-<!--Basicamente o campo de obsservação-->
+            </div>
+            <br>
 
             <p class="campo">
-  <label for="detalhes-projeto">Conte sobre o projeto</label>
-  <textarea id="detalhes-projeto"
-    name="detalhes"
-    placeholder="Ex.: sala de estar com aproximadamente 25 m² e preferência por tons claros." minlength="20"
-    maxlength="1200"></textarea>
-</p>
+              <label for="detalhes-projeto">Conte sobre o projeto</label>
+              <textarea id="detalhes-projeto" name="detalhes"
+                placeholder="Ex.: sala de estar com aproximadamente 25 m² e preferência por tons claros." minlength="20"
+                maxlength="1200"></textarea>
+            </p>
 
-<!-- Bloco que centraliza o botão de enviar, no meio -->
-<div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
-  <button class="botao" type="submit">Enviar e Conversar com Especialista</button>
-</div>
+            <button class="botao" type="submit">Enviar e Conversar com Especialista</button>
+
 
           </fieldset>
         </form>
@@ -180,7 +177,7 @@
           </address>
         </section>
       </section>
-       <div class="rodape-base">
+      <div class="rodape-base">
         <p>© 2000–2026 Personal Pisos e Carpetes. Todos os direitos reservados.</p>
         <p>Atendimento de segunda a sexta, das 8h às 17h.</p>
       </div>
