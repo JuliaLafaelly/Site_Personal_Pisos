@@ -103,7 +103,19 @@ A conversa também ajudou o grupo a compreender melhor a identidade da empresa e
 
 **Imagem da comprovação:**
 
-![Imagem realizada na loja](imagens/nosNaLoja.jpeg)
+![Imagem realizada na loja](assets/imagens/nosNaLoja.jpeg)
+
+## Dificuldades encontradas
+
+Durante o desenvolvimento e a revisão do site, foram encontradas algumas dificuldades:
+
+**Organização dos caminhos**
+
+As páginas internas ficam dentro da pasta `pages`, enquanto o CSS, JavaScript e as imagens ficam em outras pastas. Por isso, foi necessário utilizar caminhos diferentes.
+
+**Github**
+
+Tivemos algumas dificuldades para mexer no versionamento do Github.
 
 ## Conclusão
 
