@@ -87,3 +87,15 @@ function aplicarMascaraCpf(campo) {
 
 document.querySelectorAll('input[type="tel"]').forEach(aplicarMascaraTelefone);
 document.querySelectorAll('input[name="cpf"]').forEach(aplicarMascaraCpf);
+
+
+  document.querySelectorAll("[data-comparador]").forEach((comparador) => {
+    const controle = comparador.querySelector(".comparador__controle");
+
+    const atualizar = () => {
+      comparador.style.setProperty("--posicao", `${controle.value}%`);
+    };
+
+    controle.addEventListener("input", atualizar);
+    atualizar();
+  });
