@@ -27,7 +27,12 @@
         <span>Personal Pisos <small>Projetos e Decorações</small></span>
       </a>
 
-      <ul class="menu">
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
         <li><a href="index.html" class="menu-link">Início</a></li>
         <li><a href="pages/sobre.html" class="menu-link">Sobre</a></li>
         <li><a href="pages/pisos-laminados.html" class="menu-link">Laminados</a></li>
@@ -45,6 +50,19 @@
 
   <main id="conteudo">
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <a class="whats-btn" href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank"
+      rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+
+
+
+
     <section class="hero" aria-labelledby="titulo-home">
       <div class="slider">
 
@@ -52,8 +70,8 @@
           <img src="assets/imagens/slidePersonal.png" alt="Persianas em um ambiente de estar elegante" width="1600"
             height="900">
           <div class="slide-conteudo">
-            <h1 id="titulo-home">Personal Pisos e Carpetes</h1>
-            <p class="kicker">Consultoria em decoração</p>
+            <h1 id="titulo-home">Realizando sonhos,</h1>
+            <p class="kicker">construímos histórias.</p>
             <p class="hero-acoes"><a class="botao" href="pages/orcamento.html">Pedir orçamento</a> <a
                 class="botao botao-secundario" href="pages/sobre.html">Conhecer a Personal</a></p>
           </div>
@@ -145,16 +163,35 @@
         <p class="kicker">Marcas parceiras</p>
         <h2 class="titulo-secao" id="titulo-marcas">As Melhores Marcas de Pisos laminados, Vinílicos E Carpetes.</h2>
         <p class="subtitulo-secao">Trabalhamos com marcas reconhecidas para ampliar as possibilidades de acabamento do
-          seu projeto.</p>
+          seu projeto. Veja o catalogo:</p>
         <ul class="grade-marcas lista-marcas">
-          <li class="marca-card"><img src="assets/imagens/arquitech.png" alt="Arquitech" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/durafloor.png" alt="Durafloor" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/eucafloor.png" alt="Eucafloor" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/logo-ospe-floor.png" alt="Ospe Floor" width="240"
-              height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/quick-step.png" alt="Quick-Step" width="240" height="100">
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoArquitech.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Arquitech (PDF)">
+              <img src="assets/imagens/arquitech.png" alt="Arquitech" width="240" height="100">
+            </a>
           </li>
-          <li class="marca-card"><img src="assets/imagens/tarkett.png" alt="Tarkett" width="240" height="100"></li>
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoDurafloor.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Durafloor (PDF)">
+              <img src="assets/imagens/durafloor.png" alt="Durafloor" width="240" height="100">
+            </a>
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/eucafloor.png" alt="Eucafloor" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/logo-ospe-floor.png" alt="Ospe Floor" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/quick-step.png" alt="Quick-Step" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoTarkett.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Tarkett (PDF)">
+              <img src="assets/imagens/tarkett.png" alt="Tarkett" width="240" height="100">
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -244,29 +281,8 @@
             alt="Ambiente residencial com decoração integrada" width="1200" height="800">
         </figure>
       </div>
+
     </section>
-
-    <div class="comparador" data-comparador>
-    <img class="comparador__imagem"
-        src="https://tse4.mm.bing.net/th/id/OIP.8r9JdDXOi7wr8BqBVljOfQHaE7?r=0&pid=Api&h=220&P=0"
-        alt="Sala antes da transformação">
-
-    <div class="comparador__depois">
-        <img class="comparador__imagem"
-            src="https://tse1.mm.bing.net/th/id/OIP.z_DiWRPIgoWVU22BaltFOwHaE_?r=0&pid=Api&h=220&P=0"
-            alt="Sala depois da transformação">
-    </div>
-
-    <span class="comparador__rotulo comparador__rotulo--antes">ANTES</span>
-    <span class="comparador__rotulo comparador__rotulo--depois">DEPOIS</span>
-    <span class="comparador__divisor" aria-hidden="true">
-        <span>↔</span>
-    </span>
-
-    <input class="comparador__controle" type="range" min="0" max="100" value="50"
-        aria-label="Arraste para comparar antes e depois">
-</div>
-
 
 
 
@@ -306,7 +322,7 @@
       </div>
     </section>
 
-    
+
 
     <section class="secao secao-cinza" aria-labelledby="titulo-avaliacao">
       <div class="container">
@@ -317,6 +333,9 @@
             <p>Conte o que você imagina. A Personal ajuda a transformar referências em escolhas possíveis.</p>
           </article>
           <a class="botao botao-secundario" href="pages/orcamento.html">Solicitar orçamento</a>
+          <a class="botao botao-secundario" href="https://www.quick-step.com.br/pt-br/roomviewer"
+            target="_blank">Visualize seu piso</a>
+
         </div>
       </div>
     </section>

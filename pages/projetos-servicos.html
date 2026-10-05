@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet">
   <link rel="icon" href="../assets/imagens/Logo.jpeg" type="image/jpeg">
- <link rel="stylesheet" href="../Css/style.css">
+  <link rel="stylesheet" href="../Css/style.css">
 </head>
 
 <body>
@@ -21,10 +21,17 @@
   <header class="site-header">
     <nav class="navegacao" aria-label="Navegação principal">
       <a class="marca-site" href="../index.html">
-        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos Projetos e Decorações" class="logo" width="52" height="52">
+        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos Projetos e Decorações" class="logo" width="52"
+          height="52">
         <span>Personal Pisos <small>Projetos e Decorações</small></span>
       </a>
-      <ul class="menu">
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
         <li><a href="../index.html" class="menu-link">Início</a></li>
         <li><a href="sobre.html" class="menu-link">Sobre</a></li>
         <li><a href="pisos-laminados.html" class="menu-link">Laminados</a></li>
@@ -40,7 +47,7 @@
     </nav>
   </header>
 
-  
+
   <main id="conteudo">
 
     <section class="page-banner" aria-labelledby="titulo-servicos">
