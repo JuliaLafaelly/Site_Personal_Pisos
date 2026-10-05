@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Pisos, carpetes, persianas, papéis de parede e soluções para decoração de interiores em São Paulo.">
-  <title>Início | Personal Pisos e Carpetes</title>
+  <title>Início | Personal Pisos </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -24,10 +24,15 @@
     <nav class="navegacao" aria-label="Navegação principal">
       <a class="marca-site" href="index.html">
         <img src="assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
-        <span>Personal<small>Pisos e Carpetes</small></span>
+        <span>Personal Pisos <small>Projetos e Decorações</small></span>
       </a>
 
-      <ul class="menu">
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
         <li><a href="index.html" class="menu-link">Início</a></li>
         <li><a href="pages/sobre.html" class="menu-link">Sobre</a></li>
         <li><a href="pages/pisos-laminados.html" class="menu-link">Laminados</a></li>
@@ -45,6 +50,19 @@
 
   <main id="conteudo">
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <a class="whats-btn" href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank"
+      rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+
+
+
+
     <section class="hero" aria-labelledby="titulo-home">
       <div class="slider">
 
@@ -52,8 +70,8 @@
           <img src="assets/imagens/slidePersonal.png" alt="Persianas em um ambiente de estar elegante" width="1600"
             height="900">
           <div class="slide-conteudo">
-            <h1 id="titulo-home">Personal Pisos e Carpetes</h1>
-            <p class="kicker">Consultoria em decoração</p>
+            <h1 id="titulo-home">Realizando sonhos,</h1>
+            <p class="kicker">construímos histórias.</p>
             <p class="hero-acoes"><a class="botao" href="pages/orcamento.html">Pedir orçamento</a> <a
                 class="botao botao-secundario" href="pages/sobre.html">Conhecer a Personal</a></p>
           </div>
@@ -145,16 +163,35 @@
         <p class="kicker">Marcas parceiras</p>
         <h2 class="titulo-secao" id="titulo-marcas">As Melhores Marcas de Pisos laminados, Vinílicos E Carpetes.</h2>
         <p class="subtitulo-secao">Trabalhamos com marcas reconhecidas para ampliar as possibilidades de acabamento do
-          seu projeto.</p>
+          seu projeto. Veja o catalogo:</p>
         <ul class="grade-marcas lista-marcas">
-          <li class="marca-card"><img src="assets/imagens/arquitech.png" alt="Arquitech" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/durafloor.png" alt="Durafloor" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/eucafloor.png" alt="Eucafloor" width="240" height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/logo-ospe-floor.png" alt="Ospe Floor" width="240"
-              height="100"></li>
-          <li class="marca-card"><img src="assets/imagens/quick-step.png" alt="Quick-Step" width="240" height="100">
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoArquitech.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Arquitech (PDF)">
+              <img src="assets/imagens/arquitech.png" alt="Arquitech" width="240" height="100">
+            </a>
           </li>
-          <li class="marca-card"><img src="assets/imagens/tarkett.png" alt="Tarkett" width="240" height="100"></li>
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoDurafloor.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Durafloor (PDF)">
+              <img src="assets/imagens/durafloor.png" alt="Durafloor" width="240" height="100">
+            </a>
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/eucafloor.png" alt="Eucafloor" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/logo-ospe-floor.png" alt="Ospe Floor" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <img src="assets/imagens/quick-step.png" alt="Quick-Step" width="240" height="100">
+          </li>
+          <li class="marca-card">
+            <a href="assets/catalogos/catalogoTarkett.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir catálogo Tarkett (PDF)">
+              <img src="assets/imagens/tarkett.png" alt="Tarkett" width="240" height="100">
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -244,8 +281,8 @@
             alt="Ambiente residencial com decoração integrada" width="1200" height="800">
         </figure>
       </div>
-    </section>
 
+    </section>
 
 
 
@@ -282,30 +319,25 @@
             </a>
           </div>
         </div>
+
+          <a class="selo-reclame-aqui"
+   href="https://www.reclameaqui.com.br/empresa/personal-pisos-e-carpetes-consultoria-em-decoracao/"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Consultar o perfil da Personal Pisos e Carpetes no Reclame AQUI, abre em nova aba">
+  <span class="selo-reclame-aqui-marca" aria-hidden="true">RA</span>
+  <span class="selo-reclame-aqui-texto">
+    <strong>Também estamos no Reclame AQUI</strong>
+    <small>Consulte nosso perfil e as informações atualizadas</small>
+  </span>
+  <span class="selo-reclame-aqui-seta" aria-hidden="true">↗</span>
+</a>
+
+
       </div>
     </section>
 
-    <section class="sliderLogo" aria-label="Galeria de ambientes">
-      <div class="slideLogo ativo">
-        <img src="assets/imagens/Produtos%20Dec.avif" alt="Imagem Slider" />
-        <img src="assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logoCentro" />
-      </div>
 
-      <div class="slideLogo">
-        <img src="assets/imagens/slideDesignerInteriores.avif" alt="Imagem Slider" />
-        <img src="assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logoCentro" />
-      </div>
-
-      <div class="slideLogo">
-        <img src="assets/imagens/Rebaixamento%20Teto.jpg" alt="Imagem Slider" />
-        <img src="assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logoCentro" />
-      </div>
-
-      <div class="slideLogo">
-        <img src="assets/imagens/paineldetv.jpg" alt="Imagem Slider" />
-        <img src="assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logoCentro" />
-      </div>
-    </section>
 
     <section class="secao secao-cinza" aria-labelledby="titulo-avaliacao">
       <div class="container">
@@ -316,16 +348,20 @@
             <p>Conte o que você imagina. A Personal ajuda a transformar referências em escolhas possíveis.</p>
           </article>
           <a class="botao botao-secundario" href="pages/orcamento.html">Solicitar orçamento</a>
+          <a class="botao botao-secundario" href="https://www.quick-step.com.br/pt-br/roomviewer"
+            target="_blank">Visualize seu piso</a>
+
         </div>
       </div>
     </section>
 
   </main>
+
   <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
-          <h2 id="titulo-rodape">Personal Pisos e Carpetes</h2>
+          <h2 id="titulo-rodape">Personal Pisos Projetos e Decorações</h2>
           <p>Há mais de 16 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
           <p><a class="link-seta" href="pages/contato.html">Fale com a nossa equipe</a></p>
         </article>
@@ -348,11 +384,13 @@
         </section>
       </section>
       <div class="rodape-base">
-        <p>© 2000–2026 Personal Pisos e Carpetes. Todos os direitos reservados.</p>
-        <p>Atendimento de segunda a sexta, das 8h às 17h.</p>
+        <p>© 2000–2026 Personal Pisos Projetos e Decorações. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h e sábados das 8h às 14h.</p>
+        
       </div>
     </div>
   </footer>
+
   <script src="js/main.js" defer></script>
 </body>
 

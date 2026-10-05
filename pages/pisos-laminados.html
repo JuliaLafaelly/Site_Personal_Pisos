@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Pisos laminados para ambientes internos com conforto visual, aconchego e praticidade.">
-  <title>Pisos laminados | Personal Pisos e Carpetes</title>
+    content="Conheça os projetos, serviços de interiores, acabamentos e soluções complementares da Personal.">
+  <title>Personal Pisos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet">
   <link rel="icon" href="../assets/imagens/Logo.jpeg" type="image/jpeg">
-<link rel="stylesheet" href="../Css/style.css">
+  <link rel="stylesheet" href="../Css/style.css">
 </head>
 
 <body>
@@ -21,10 +21,17 @@
   <header class="site-header">
     <nav class="navegacao" aria-label="Navegação principal">
       <a class="marca-site" href="../index.html">
-        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos e Carpetes" class="logo" width="52" height="52">
-        <span>Personal<small>Pisos e Carpetes</small></span>
+        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos Projetos e Decorações" class="logo" width="52"
+          height="52">
+        <span>Personal Pisos <small>Projetos e Decorações</small></span>
       </a>
-      <ul class="menu">
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
         <li><a href="../index.html" class="menu-link">Início</a></li>
         <li><a href="sobre.html" class="menu-link">Sobre</a></li>
         <li><a href="pisos-laminados.html" class="menu-link">Laminados</a></li>
@@ -106,23 +113,21 @@
     </section>
   </main>
 
-
-
-  <footer class="rodape">
+ <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
-          <h2 id="titulo-rodape">Personal Pisos e Carpetes</h2>
+          <h2 id="titulo-rodape">Personal Pisos Projetos e Decorações</h2>
           <p>Há mais de 16 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
-          <p><a class="link-seta" href="contato.html">Fale com a nossa equipe</a></p>
+          <p><a class="link-seta" href="pages/contato.html">Fale com a nossa equipe</a></p>
         </article>
         <nav aria-label="Navegação complementar">
           <h3>Explore</h3>
           <ul class="rodape-menu">
-            <li><a href="sobre.html">Sobre a Personal</a></li>
-            <li><a href="projetos-servicos.html">Projetos e serviços</a></li>
-            <li><a href="orcamento.html">Solicitar orçamento</a></li>
-            <li><a href="contato.html">Onde estamos</a></li>
+            <li><a href="pages/sobre.html">Sobre a Personal</a></li>
+            <li><a href="pages/projetos-servicos.html">Projetos e serviços</a></li>
+            <li><a href="pages/orcamento.html">Solicitar orçamento</a></li>
+            <li><a href="pages/contato.html">Onde estamos</a></li>
           </ul>
         </nav>
         <section>
@@ -135,11 +140,13 @@
         </section>
       </section>
       <div class="rodape-base">
-        <p>© 2000–2026 Personal Pisos e Carpetes. Todos os direitos reservados.</p>
-        <p>Atendimento de segunda a sexta, das 8h às 17h.</p>
+        <p>© 2000–2026 Personal Pisos Projetos e Decorações. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h e sábados das 8h às 14h.</p>
+        
       </div>
     </div>
   </footer>
+  
   <script src="../js/main.js" defer></script>
 </body>
 

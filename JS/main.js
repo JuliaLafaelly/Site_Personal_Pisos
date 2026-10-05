@@ -87,3 +87,38 @@ function aplicarMascaraCpf(campo) {
 
 document.querySelectorAll('input[type="tel"]').forEach(aplicarMascaraTelefone);
 document.querySelectorAll('input[name="cpf"]').forEach(aplicarMascaraCpf);
+
+
+  document.querySelectorAll("[data-comparador]").forEach((comparador) => {
+    const controle = comparador.querySelector(".comparador__controle");
+
+    const atualizar = () => {
+      comparador.style.setProperty("--posicao", `${controle.value}%`);
+    };
+
+    controle.addEventListener("input", atualizar);
+    atualizar();
+  });
+
+  const burger = document.getElementById('burger');
+const menuPrincipal = document.getElementById('menu-principal');
+
+if (burger && menuPrincipal) {
+  const fecharMenu = () => {
+    menuPrincipal.classList.remove('aberto');
+    burger.classList.remove('ativo');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Abrir menu');
+  };
+
+  burger.addEventListener('click', () => {
+    const aberto = menuPrincipal.classList.toggle('aberto');
+    burger.classList.toggle('ativo', aberto);
+    burger.setAttribute('aria-expanded', aberto);
+    burger.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+  });
+
+  menuPrincipal.querySelectorAll('a').forEach((a) => a.addEventListener('click', fecharMenu));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fecharMenu(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 1050) fecharMenu(); });
+}
