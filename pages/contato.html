@@ -50,7 +50,7 @@
   <main id="conteudo">
 
     <section class="page-banner" aria-labelledby="titulo-contato">
-      <div class="container">
+      <div class="container escondido5">
         <p class="breadcrumb">Atendimento</p>
         <h1 class="titulo-pagina" id="titulo-contato">Fale conosco</h1>
         <p>Envie seus dados e conte o que você procura. A equipe Personal retornará para orientar os próximos passos.
@@ -60,10 +60,10 @@
     <section class="secao secao-clara" aria-labelledby="titulo-formulario-contato">
       <div class="container grade-contato">
         <article>
-          <p class="kicker">Contato</p>
-          <h2 class="titulo-secao" id="titulo-formulario-contato">Estamos prontos para ouvir você.</h2>
+          <p class="kicker escondido4">Contato</p>
+          <h2 class="titulo-secao escondido3" id="titulo-formulario-contato">Estamos prontos para ouvir você.</h2>
 
-          <ul class="lista-contato">
+          <ul class="lista-contato escondido4">
             <li>
               <strong>Telefone</strong>
               <a href="tel:+551129227695">(11) 2922-7695</a>
@@ -98,7 +98,7 @@
             </li>
           </ul>
         </article>
-        <form class="formulario-contato" action="#" method="post">
+        <form class="formulario-contato escondido2" action="#" method="post">
           <fieldset>
             <legend>Envie uma mensagem</legend>
             <div class="campo-grid">
@@ -126,7 +126,7 @@
       </div>
     </section>
     <section class="secao secao-cinza" aria-labelledby="titulo-localizacao">
-      <div class="container">
+      <div class="container escondido2">
         <p class="kicker">Onde estamos</p>
         <h2 class="titulo-secao" id="titulo-localizacao">Visite a Personal em São Paulo.</h2>
         <div class="grade-contato">
@@ -151,7 +151,7 @@
 
   </main>
 
-   <footer class="rodape">
+  <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
@@ -187,5 +187,36 @@
   
   <script src="../js/main.js" defer></script>
 </body>
+
+<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
+
+
+    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer1');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer2');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
+    </script>
+
+
 
 </html>

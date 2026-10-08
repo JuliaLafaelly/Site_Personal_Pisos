@@ -51,7 +51,7 @@
   <main id="conteudo">
 
     <section class="page-banner" aria-labelledby="titulo-servicos">
-      <div class="container">
+      <div class="container escondido5">
         <p class="breadcrumb">Soluções completas</p>
         <h1 class="titulo-pagina" id="titulo-servicos">Projetos e serviços</h1>
         <p>Do primeiro moodboard à instalação, reunimos experiência e cuidado para que o resultado acompanhe o que foi
@@ -60,15 +60,14 @@
     </section>
 
 
-
     <section class="secao secao-clara" aria-labelledby="titulo-servicos-lista">
-      <div class="container">
+      <div class="container escondido2">
         <p class="kicker">Como podemos ajudar</p>
 
         <h2 class="titulo-secao" id="titulo-servicos-lista">
           Apoio para transformar referências em ambientes.
         </h2>
-
+<br>
         <div class="grade-servicos">
           <article class="cartao-servico">
             <img class="cartao-imagem" src="../assets/imagens/Pintura.jpg" alt="Pintura em ambiente interno" width="900"
@@ -220,16 +219,16 @@
     <section class="secao secao-cinza" aria-labelledby="titulo-etapas">
       <div class="container grade-dupla">
         <article>
-          <p class="kicker">Nosso processo</p>
-          <h2 class="titulo-secao" id="titulo-etapas">Clareza do começo ao fim.</h2>
-          <ol class="lista-recursos">
+          <p class="kicker escondido4">Nosso processo</p>
+          <h2 class="titulo-secao escondido3" id="titulo-etapas">Clareza do começo ao fim.</h2>
+          <ol class="lista-recursos escondido4">
             <li><strong>Conversa inicial:</strong> entendemos o ambiente, as prioridades e o estilo desejado.</li>
             <li><strong>Seleção:</strong> apresentamos produtos, referências e combinações possíveis.</li>
             <li><strong>Orçamento:</strong> organizamos escopo, medidas, materiais e condições.</li>
             <li><strong>Execução:</strong> acompanhamos a entrega e a instalação dos itens contratados.</li>
           </ol>
         </article>
-        <aside class="cartao-informacao">
+        <aside class="cartao-informacao escondido2">
           <h2>Tem um projeto em andamento?</h2>
           <p>Envie as informações que já possui. Podemos ajudar a identificar os próximos passos e os produtos mais
             adequados.</p><a class="botao" href="orcamento.html">Começar conversa</a>
@@ -240,7 +239,7 @@
   </main>
   
   
- <footer class="rodape">
+  <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
@@ -276,5 +275,36 @@
 
   <script src="../js/main.js" defer></script>
 </body>
+
+<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
+
+
+    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer1');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer2');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
+    </script>
+
+
 
 </html>

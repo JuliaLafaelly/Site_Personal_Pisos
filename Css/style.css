@@ -403,6 +403,7 @@ main {
 .texto-destaque {
   font-size: clamp(1.08rem, 1.8vw, 1.3rem);
   line-height: 1.7;
+  text-align: justify;
 }
 
 .texto-destaque strong {
@@ -1996,3 +1997,159 @@ footer {
   font-size: 1.25rem;
   font-weight: 700;
 }
+
+/* Antes e depois / codigo da imagem da pagina inicial */
+
+.comparador {
+    width: 1200px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    align-items: flex-end;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.imagem-base {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+}
+
+.imagem-revelada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagem-revelada img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divisor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: white;
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 28px;
+    color: #222;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.controle {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: ew-resize;
+    z-index: 5;
+}
+
+/* Apenas organiza o texto e o comparador lado a lado. */
+.secao-escura .grade-dupla {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(32px, 6vw, 96px);
+}
+
+.secao-escura .grade-dupla > article {
+    min-width: 0;
+}
+
+.secao-escura .grade-dupla > .comparador {
+    width: 100%;
+    max-width: 560px;
+    justify-self: end;
+}
+
+@media (max-width: 800px) {
+    .secao-escura .grade-dupla {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .secao-escura .grade-dupla > .comparador {
+        justify-self: stretch;
+        max-width: none;
+    }
+}
+
+
+/* Modos de transição fade in e fade out */
+
+.escondido1 { /* Para textos*/
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.escondido2 { /* Para card/img */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.escondido3 { /* Para card/img(com transição para direita) */
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.escondido4 { /* Para texto normalmente. (com transição para esquerda) */
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.escondido5 { /* Para elementos sem a transição */
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.aparecer1 { /* Para todos os escondidos */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aparecer2 { /* Para elementos sem a transição X e Y */
+  opacity: 1;
+}
+
