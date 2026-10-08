@@ -50,7 +50,7 @@
   <main id="conteudo">
 
     <section class="page-banner" aria-labelledby="titulo-orcamento">
-      <div class="container">
+      <div class="container escondido5">
         <p class="breadcrumb">Planeje seu ambiente</p>
         <h1 class="titulo-pagina" id="titulo-orcamento">Solicite um orçamento</h1>
         <p>Compartilhe as informações iniciais para que possamos entender o escopo e preparar uma orientação mais
@@ -60,17 +60,17 @@
     <section class="secao secao-clara" aria-labelledby="titulo-formulario-orcamento">
       <div class="container grade-contato">
         <article>
-          <p class="kicker">Primeiro passo</p>
-          <h2 class="titulo-secao" id="titulo-formulario-orcamento">Quanto mais contexto, melhor a nossa indicação.</h2>
-          <p>Você não precisa ter todas as medidas neste primeiro contato. Informe o que já sabe, escolha o tipo de
+          <p class="kicker escondido3">Primeiro passo</p>
+          <h2 class="titulo-secao escondido2" id="titulo-formulario-orcamento">Quanto mais contexto, melhor a nossa indicação.</h2>
+          <p class="escondido5">Você não precisa ter todas as medidas neste primeiro contato. Informe o que já sabe, escolha o tipo de
             solução e nossa equipe ajudará a organizar as próximas etapas.</p>
-          <aside class="catalogo-destaque">
+          <aside class="catalogo-destaque escondido4">
             <h2>Atendimento personalizado</h2>
             <p>Depois do envio, podemos conversar sobre medidas, referências visuais, prazos e opções de acabamento.</p>
           </aside>
         </article>
 
-        <form class="formulario" action="#" method="post">
+        <form class="formulario escondido3" action="#" method="post">
           <fieldset>
             <legend>Dados do projeto</legend>
             <div class="campo-grid">
@@ -81,7 +81,7 @@
                   name="email" placeholder="email@gmail.com" maxlength="120" autocomplete="email" required></p>
             </div>
 
-            <!--Começei aqui(GC)-->
+            <!--Começei aqui-->
 
             <div class="campo-grid" style="display: flex; gap: 15px; align-items: flex-start; width: 100%;">
 
@@ -130,9 +130,9 @@
     </section>
     <section class="secao secao-cinza" aria-labelledby="titulo-orcamento-apoio">
       <div class="container">
-        <p class="kicker">Ainda está pesquisando?</p>
-        <h2 class="titulo-secao" id="titulo-orcamento-apoio">Veja nossas linhas antes de enviar.</h2>
-        <div class="grade-cartoes">
+        <p class="kicker escondido4">Ainda está pesquisando?</p>
+        <h2 class="titulo-secao escondido3" id="titulo-orcamento-apoio">Veja nossas linhas antes de enviar.</h2>
+        <div class="grade-cartoes escondido2">
           <article class="cartao">
             <div class="cartao-conteudo">
               <h3>Pisos e revestimentos</h3>
@@ -160,7 +160,7 @@
 
   </main>
 
-   <footer class="rodape">
+  <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
@@ -196,5 +196,36 @@
   
   <script src="../js/main.js" defer></script>
 </body>
+
+<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
+
+
+    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer1');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer2');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
+    </script>
+
+
 
 </html>
