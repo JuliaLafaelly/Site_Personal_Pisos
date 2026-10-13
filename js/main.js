@@ -122,3 +122,46 @@ if (burger && menuPrincipal) {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fecharMenu(); });
   window.addEventListener('resize', () => { if (window.innerWidth > 1050) fecharMenu(); });
 }
+
+
+// Todo elemento na classificação, que tiver escrito "escondido" via HTML, tem a transição(codigo abaixo para efeito de fade in) - codigos de transição no CSS ao fim
+
+const elements = document.querySelectorAll('escondido1, escondido2, escondido3, escondido4');
+
+function checkFade() {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+                                                                                //Para escondidos que combinam
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add('aparecer1');
+        }
+    });
+}
+
+const elements1 = document.querySelectorAll('escondido5');
+
+function checkFade() {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+                                                                                //Para escondidos que combinam
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add('aparecer2');
+        }
+    });
+}
+
+// codigo de imagem: antes e depois
+
+
+const controle = document.querySelector(".controle");
+const imagemRevelada = document.querySelector(".imagem-revelada");
+const divisor = document.querySelector(".divisor");
+
+controle.addEventListener("input", function () {
+
+    const valor = this.value;
+
+    imagemRevelada.style.width = valor + "%";
+    divisor.style.left = valor + "%";
+
+});

@@ -49,7 +49,7 @@
 
   <main id="conteudo">
     <section class="page-banner" aria-labelledby="titulo-pagina">
-      <div class="container">
+      <div class="container escondido5">
         <p class="breadcrumb">Catálogo · Paredes</p>
         <h1 class="titulo-pagina" id="titulo-pagina">Papéis de parede</h1>
         <p>Papéis de parede com texturas, estampas e acabamentos para renovar ambientes com personalidade.</p>
@@ -58,24 +58,24 @@
     <section class="secao secao-clara" aria-labelledby="titulo-detalhe">
       <h2 class="sr-only" id="titulo-detalhe">Detalhes sobre Papéis de parede</h2>
       <div class="container detalhe-produto">
-        <figure><img src="../assets/imagens/papeldeParede.png" alt="Parede com papel de parede decorativo" width="1200"
+        <figure><img src="../assets/imagens/papeldeParede.png" class="escondido4" alt="Parede com papel de parede decorativo" width="1200"
             height="800">
           <figcaption>Parede com papel de parede decorativo</figcaption>
         </figure>
         <article>
-          <p class="kicker">Paredes</p>
-          <h2 class="titulo-secao">Uma mudança marcante sem perder a delicadeza.</h2>
-          <p>Na Personal, você recebe orientação para escolher o acabamento que melhor conversa com a rotina, o estilo e
+          <p class="kicker escondido4">Paredes</p>
+          <h2 class="titulo-secao escondido3">Uma mudança marcante sem perder a delicadeza.</h2>
+          <p class="escondido5">Na Personal, você recebe orientação para escolher o acabamento que melhor conversa com a rotina, o estilo e
             as características do ambiente. Consulte nossa equipe para conhecer amostras, disponibilidade e
             possibilidades de instalação.</p>
-          <ul class="lista-recursos">
+          <ul class="lista-recursos escondido4">
             <li><strong>Expressão:</strong> estampas e texturas para criar pontos de interesse e identidade.</li>
             <li><strong>Versatilidade:</strong> possibilidades para quartos, salas, lavabos, halls e espaços comerciais.
             </li>
             <li><strong>Curadoria:</strong> ajudamos a equilibrar escala, cor, luz e os demais elementos do projeto.
             </li>
           </ul>
-          <table class="tabela-especificacoes">
+          <table class="tabela-especificacoes escondido2">
             <caption class="sr-only">Aspectos para considerar na escolha</caption>
             <tbody>
               <tr>
@@ -91,12 +91,12 @@
                 <td>Envie suas referências ou visite a loja para conhecer opções.</td>
               </tr>
             </tbody>
-          </table><a class="botao" href="orcamento.html">Solicitar catálogo e orçamento</a>
+          </table><a class="botao escondido2" href="orcamento.html">Solicitar catálogo e orçamento</a>
         </article>
       </div>
     </section>
     <section class="secao secao-cinza" aria-labelledby="titulo-relacionados">
-      <div class="container grade-dupla">
+      <div class="container grade-dupla escondido2">
         <article>
           <p class="kicker">Continue explorando</p>
           <h2 class="titulo-secao" id="titulo-relacionados">Crie uma composição completa.</h2>
@@ -113,9 +113,9 @@
       </div>
     </section>
   </main>
- 
+
   
- <footer class="rodape">
+  <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
@@ -151,5 +151,36 @@
 
   <script src="../js/main.js" defer></script>
 </body>
+
+<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
+
+
+    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer1');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer2');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
+    </script>
+
+
 
 </html>
