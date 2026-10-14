@@ -4,7 +4,7 @@
   --preto: #151311;
   --grafite: #28231f;
   --marrom: #4b3a2e;
-  --verde: #719b35;
+  --azul-petroleo: #0f2027;
   --verde-escuro: #4d7022;
   --dourado: #c8a457;
   --creme: #f7f4ef;
@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--creme);
+  background: var(--branco);
   color: var(--preto);
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -78,7 +78,7 @@ a,
 input,
 select,
 textarea {
-  outline-color: var(--verde);
+  outline-color: var(--azul-petroleo);
   outline-offset: 3px;
 }
 
@@ -102,7 +102,7 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(247, 244, 239, 0.96);
+  background: var(--azul-petroleo);
   border-bottom: 1px solid var(--borda);
   backdrop-filter: blur(14px);
 }
@@ -121,7 +121,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--preto);
+  color: var(--dourado);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -144,7 +144,7 @@ textarea {
 }
 
 .marca-site small {
-  color: var(--verde-escuro);
+  color: var(--creme);
   font-family: 'Manrope', Arial, sans-serif;
   font-size: 0.55rem;
   font-weight: 800;
@@ -175,7 +175,7 @@ textarea {
   position: relative;
   display: inline-block;
   padding: 0.45rem 0;
-  color: var(--preto);
+  color: var(--dourado);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.055em;
@@ -189,7 +189,7 @@ textarea {
   bottom: 0;
   left: 0;
   height: 2px;
-  background: var(--verde);
+  background: var(--azul-petroleo);
   content: '';
   transform: scaleX(0);
   transform-origin: right;
@@ -231,7 +231,7 @@ main {
 }
 
 .secao-verde {
-  background: var(--verde);
+  background: var(--azul-petroleo);
   color: var(--branco);
 }
 
@@ -358,10 +358,10 @@ main {
   align-items: center;
   justify-content: center;
   padding: 0.7rem 1.25rem;
-  border: 1px solid var(--verde);
   border-radius: 999px;
-  background: var(--verde);
-  color: var(--branco);
+  background: var(--azul-petroleo);
+  color: var(--dourado);
+  border-color: var(--dourado);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.075em;
@@ -372,23 +372,23 @@ main {
 
 .botao:hover,
 .botao:focus-visible {
-  background: var(--verde-escuro);
-  border-color: var(--verde-escuro);
-  color: var(--branco);
+  background: var(--dourado);
+  border-color: var(--dourado);
+  color: var(--azul-petroleo);
   transform: translateY(-2px);
 }
 
 .botao-secundario {
-  border-color: currentColor;
-  background: transparent;
-  color: inherit;
+  border-color: var(--dourado);
+  background: var(--azul-petroleo);
+  color: var(--dourado);
 }
 
 .botao-secundario:hover,
 .botao-secundario:focus-visible {
-  background: var(--branco);
-  border-color: var(--branco);
-  color: var(--preto);
+  background: var(--dourado);
+  border-color: var(--dourado);
+  color: var(--azul-petroleo);
 }
 
 .grade-dupla,
@@ -459,7 +459,7 @@ main {
   width: 1.45rem;
   height: 1.45rem;
   border-radius: 50%;
-  background: var(--verde);
+  background: var(--azul-petroleo);
   color: var(--branco);
   content: '✓';
   font-size: 0.78rem;
@@ -817,7 +817,7 @@ figure figcaption {
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-  border-color: var(--verde);
+  border-color: var(--azul-petroleo);
   box-shadow: 0 0 0 3px rgba(113, 155, 53, 0.16);
 }
 
@@ -945,7 +945,7 @@ address {
   gap: 2rem;
   padding: 2rem;
   border-radius: var(--raio);
-  background: var(--verde);
+  background: var(--azul-petroleo);
   color: var(--branco);
 }
 
@@ -1118,7 +1118,7 @@ body {
   top: 0;
   z-index: 10000 !important;
   isolation: isolate;
-  background: rgba(247, 244, 239, 0.98);
+  background: var(--azul-petroleo);
 }
 
 .navegacao {
@@ -1145,7 +1145,7 @@ body {
 
 .menu-link {
   display: inline-block;
-  color: var(--preto);
+  color: var(--dourado);
   text-decoration: none;
 }
 
@@ -1408,42 +1408,14 @@ footer {
   background: rgba(0, 0, 0, 0.35);
 }
 
-.logoCentro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 170px;
-  height: 170px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 50%;
-  padding: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-  z-index: 10;
-  opacity: 0;
-  transform: translate(250px, -50%);
-  transition:
-    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 1s ease;
-}
 
-.slideLogo.ativo .logoCentro {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-.slideLogo.saindo .logoCentro {
-  opacity: 0;
-
-  transform: translate(-350px, -50%);
-}
 
 .avaliacoes-google {
   position: relative;
   z-index: 50;
   padding: clamp(3rem, 7vw, 6rem) 0;
-  background: var(--verde);
-  color: var(--branco);
+  background: var(--azul-petroleo);
+  color: var(--dourado);
 }
 
 .avaliacoes-google-conteudo {
@@ -1500,7 +1472,7 @@ footer {
 }
 
 .avaliacao-nota small {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--dourado);
 }
 
 .avaliacoes-google-acoes {
@@ -1511,15 +1483,16 @@ footer {
 }
 
 .avaliacoes-google .botao-secundario {
-  border-color: var(--branco);
-  color: var(--branco);
+  border-color: var(--dourado);
+  color: var(--dourado);
+  background-color: var(--azul-petroleo);
 }
 
 .avaliacoes-google .botao-secundario:hover,
 .avaliacoes-google .botao-secundario:focus-visible {
-  background: var(--branco);
-  border-color: var(--branco);
-  color: var(--preto);
+  background: var(--dourado);
+  border-color: var(--azul-petroleo);
+  color: var(--azul-petroleo);
 }
 
 @media (max-width: 800px) {
@@ -1563,7 +1536,7 @@ footer {
   position: relative;
   display: inline-block;
   padding: 0.45rem 0;
-  color: var(--preto);
+  color: var(--dourado);
   text-decoration: none;
   transition: color 180ms ease;
 }
@@ -1575,7 +1548,7 @@ footer {
   bottom: -0.18rem;
   left: 0;
   height: 2px;
-  background: var(--verde);
+  background: var(--verde-escuro);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 180ms ease;
@@ -1897,7 +1870,7 @@ footer {
   display: block;
   height: 3px;
   width: 100%;
-  background: var(--preto, #151311);
+  background: var(--dourado, #151311);
   border-radius: 2px;
   transition: transform .3s, opacity .3s;
 }
