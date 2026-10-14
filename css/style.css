@@ -2125,3 +2125,143 @@ footer {
 .aparecer2 { /* Para elementos sem a transição X e Y */
   opacity: 1;
 }
+
+
+/* Submenus: usam a navegação e os estilos-base já existentes */
+.menu-grupo {
+  position: relative;
+}
+
+.menu-details {
+  position: relative;
+}
+
+.menu-details > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.menu-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-details > summary::marker {
+  content: "";
+}
+
+.submenu-seta {
+  display: inline-block;
+  font-size: 0.8em;
+  transition: transform 180ms ease;
+}
+
+.menu-details[open] > .submenu-toggle .submenu-seta {
+  transform: rotate(180deg);
+}
+
+.menu-details.tem-pagina-atual > .submenu-toggle {
+  color: var(--dourado);
+}
+
+.menu-details.tem-pagina-atual > .submenu-toggle::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  z-index: 10010;
+  display: none;
+  min-width: 14rem;
+  margin: 0;
+  padding: 0.45rem;
+  list-style: none;
+  border: 1px solid rgba(200, 164, 87, 0.35);
+  border-radius: 10px;
+  background: var(--azul-petroleo);
+  box-shadow: var(--sombra);
+}
+
+.menu-details[open] > .submenu,
+.menu-details:focus-within > .submenu {
+  display: block;
+}
+
+/* Escape fecha o submenu mesmo enquanto o foco continua no summary. */
+.menu-details[data-escape-closed] > .submenu {
+  display: none !important;
+}
+
+.submenu li {
+  width: 100%;
+  border: 0;
+}
+
+.submenu-link {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  color: var(--creme);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.submenu-link:hover,
+.submenu-link:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--dourado);
+}
+
+.menu-details > summary:focus-visible,
+.submenu-link:focus-visible {
+  outline: 2px solid var(--dourado);
+  outline-offset: 3px;
+}
+
+/* Hover para mouse somente em telas de computador; foco/teclado funciona em todas. */
+@media (min-width: 1051px) {
+  .menu-grupo:hover .submenu {
+    display: block;
+  }
+
+  .menu-details[data-escape-closed]:hover > .submenu {
+    display: none !important;
+  }
+}
+
+/* A lista principal já abre/fecha pelo burger existente. Aqui só ajustamos os submenus. */
+@media (max-width: 1050px) {
+  .menu-grupo,
+  .menu-details {
+    width: 100%;
+  }
+
+  .menu-details > summary {
+    display: flex;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0.2rem 0 0.6rem 1rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .submenu-link {
+    padding: 0.65rem 0.5rem;
+    color: var(--creme);
+  }
+}
