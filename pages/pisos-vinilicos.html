@@ -49,7 +49,7 @@
 
   <main id="conteudo">
     <section class="page-banner" aria-labelledby="titulo-pagina">
-      <div class="container">
+      <div class="container escondido5">
         <p class="breadcrumb">Catálogo · Pisos</p>
         <h1 class="titulo-pagina" id="titulo-pagina">Pisos vinílicos</h1>
         <p>Pisos vinílicos para projetos que pedem versatilidade, conforto e um acabamento contemporâneo.</p>
@@ -58,17 +58,17 @@
     <section class="secao secao-clara" aria-labelledby="titulo-detalhe">
       <h2 class="sr-only" id="titulo-detalhe">Detalhes sobre Pisos vinílicos</h2>
       <div class="container detalhe-produto">
-        <figure><img src="../assets/imagens/PISO_vin.png" alt="Piso vinílico em composição de interiores" width="1200"
+        <figure><img src="../assets/imagens/PISO_vin.png" class="escondido4" alt="Piso vinílico em composição de interiores" width="1200"
             height="800">
           <figcaption>Piso vinílico em composição de interiores</figcaption>
         </figure>
         <article>
-          <p class="kicker">Pisos</p>
-          <h2 class="titulo-secao">Versatilidade para acompanhar a sua rotina.</h2>
-          <p>Na Personal, você recebe orientação para escolher o acabamento que melhor conversa com a rotina, o estilo e
+          <p class="kicker escondido4">Pisos</p>
+          <h2 class="titulo-secao escondido3">Versatilidade para acompanhar a sua rotina.</h2>
+          <p class="texto escondido5"> Na Personal, você recebe orientação para escolher o acabamento que melhor conversa com a rotina, o estilo e
             as características do ambiente. Consulte nossa equipe para conhecer amostras, disponibilidade e
             possibilidades de instalação.</p>
-          <ul class="lista-recursos">
+          <ul class="lista-recursos escondido4">
             <li><strong>Conforto:</strong> uma alternativa que contribui para a sensação de aconchego e conforto
               acústico.</li>
             <li><strong>Variedade:</strong> diferentes padrões e tonalidades para projetos clássicos ou contemporâneos.
@@ -76,7 +76,7 @@
             <li><strong>Adaptação:</strong> soluções para diferentes ambientes, sempre com avaliação técnica prévia.
             </li>
           </ul>
-          <table class="tabela-especificacoes">
+          <table class="tabela-especificacoes escondido2">
             <caption class="sr-only">Aspectos para considerar na escolha</caption>
             <tbody>
               <tr>
@@ -92,16 +92,16 @@
                 <td>Converse com a equipe sobre medidas e aplicação.</td>
               </tr>
             </tbody>
-          </table><a class="botao" href="orcamento.html">Solicitar catálogo e orçamento</a>
+          </table><a class="botao escondido2" href="orcamento.html">Solicitar catálogo e orçamento</a>
         </article>
       </div>
     </section>
     <section class="secao secao-cinza" aria-labelledby="titulo-relacionados">
-      <div class="container grade-dupla">
+      <div class="container grade-dupla escondido2">
         <article>
           <p class="kicker">Continue explorando</p>
           <h2 class="titulo-secao" id="titulo-relacionados">Descubra combinações contemporâneas.</h2>
-          <p>Combine produtos e acabamentos para chegar a um resultado mais completo e coerente.</p>
+          <p class="escondido2">Combine produtos e acabamentos para chegar a um resultado mais completo e coerente.</p>
         </article>
         <aside class="cartao-informacao">
           <h2>Outras possibilidades</h2>
@@ -151,5 +151,36 @@
   
   <script src="../js/main.js" defer></script>
 </body>
+
+<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
+
+
+    <script src="script.js"></script>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer1');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        const observer1 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer2');
+    }
+    });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
+    </script>
+
+
 
 </html>
