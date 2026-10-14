@@ -17,6 +17,14 @@
 </head>
 
 <body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <a class="whats-btn" href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank"
+      rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+    
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
   <header class="site-header">
     <nav class="navegacao" aria-label="Navegação principal">
@@ -133,10 +141,6 @@
                   placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" minlength="15" maxlength="15"
                   inputmode="tel" autocomplete="tel" required><span class="ajuda-campo">Formato: (11) 99999-9999</span>
               </p>
-              <p class="campo"><label for="cpf">CPF</label><input type="text" id="cpf" name="cpf"
-                  placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" minlength="14" maxlength="14"
-                  inputmode="numeric" autocomplete="off" required><span class="ajuda-campo">Formato:
-                  000.000.000-00</span></p>
             </div>
 
             <p class="campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem"
@@ -145,7 +149,7 @@
 
                <label class="consentimento">
   <input type="checkbox" name="consentimento" required>
-  <span>Li e concordo com a <a href="/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
+  <span>Li e concordo com a <a href="politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span>
 </label>
 
           </fieldset>
@@ -216,36 +220,5 @@
   
   <script src="../js/main.js" defer></script>
 </body>
-
-<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
-
-
-    <script src="script.js"></script>
-    <script>
-        const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer1');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
-    </script>
-
-    <script src="script.js"></script>
-    <script>
-        const observer1 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer2');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
-    </script>
-
-
 
 </html>
