@@ -56,7 +56,7 @@
         Decoração <span class="submenu-seta" aria-hidden="true">▾</span>
       </summary>
       <ul class="submenu" aria-label="Decoração">
-        <li><a class="submenu-link" href="pages/papeis-de-parede.html">Papéis de parede</a></li>
+        <li><a class="submenu-link" href="pages/papeis-de-parede.html">Papéis de Parede</a></li>
         <li><a class="submenu-link" href="pages/persianas.html">Persianas</a></li>
       </ul>
     </details>
@@ -81,7 +81,7 @@
       <i class="fa-brands fa-whatsapp"></i>
       <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
     </a>
-
+ 
 
 
 
@@ -92,15 +92,14 @@
           <img src="assets/imagens/slidePersonal.png" alt="Persianas em um ambiente de estar elegante" width="1600"
             height="900">
           <div class="slide-conteudo">
-            <h1 id="titulo-home">Realizando sonhos,</h1>
+            <h1 id="titulo-home">Realizando Sonhos,</h1>
             <p class="kicker">construímos histórias.</p>
             <p class="hero-acoes"><a class="botao" href="pages/orcamento.html">Pedir orçamento</a> <a
                 class="botao botao-secundario" href="pages/sobre.html">Conhecer a Personal</a></p>
           </div>
         </article>
-
         <article class="slide">
-          <img src="assets/imagens/slideDesignerInteriores.avif" alt="Parede decorada com papel de parede" width="1600"
+          <img src="assets/imagens/slideDesignerInteriores.avif" alt="Imagem do design de interiores." width="1600"
             height="900">
           <div class="slide-conteudo">
             <h2>Designer de Interiores</h2>
@@ -110,7 +109,7 @@
         </article>
 
         <article class="slide">
-          <img src="assets/imagens/slidePvinilico_Plaminado.png" alt="Sala com piso e decoração contemporânea"
+          <img src="assets/imagens/slidePvinilico_Plaminado.png" alt="Sala de estar com sofá caramelo, parede verde-escura e piso de madeira"
             width="1600" height="900">
           <div class="slide-conteudo">
             <h2>Pisos Laminados e Vinílicos</h2>
@@ -120,7 +119,7 @@
         </article>
 
         <article class="slide">
-          <img src="assets/imagens/sliderPersiana.png" alt="Detalhe de acabamento em ambiente decorado" width="1600"
+          <img src="assets/imagens/sliderPersiana.png" alt="alt="Persianas horizontais brancas filtrando a luz em um ambiente de trabalho." width="1600"
             height="900">
           <div class="slide-conteudo">
             <h2>Persianas Sob Medida</h2>
@@ -143,7 +142,7 @@
           <img src="assets/imagens/slidercasa.png" alt="Detalhe de acabamento em ambiente decorado" width="1600"
             height="900">
           <div class="slide-conteudo">
-            <h2>Condições especiais para renovar seu ambiente.
+            <h2>Renove seu Ambiente
             </h2>
             <p class="kicker">Para você e sua família</p>
             <p class="hero-acoes"><a class="botao" href="pages/contato.html">Entrar em contato</a></p>
@@ -187,7 +186,7 @@
       <div class="container">
 
         <p class="kicker escondido4">Marcas parceiras</p>
-        <h2 class="titulo-secao escondido4 " id="titulo-marcas">As Melhores Marcas de Pisos laminados, Vinílicos E Carpetes.</h2>
+        <h2 class="titulo-secao escondido4 " id="titulo-marcas">As melhores marcas de pisos laminados, vinílicos e carpetes.</h2>
         <p class="subtitulo-secao escondido5">Trabalhamos com marcas reconhecidas para ampliar as possibilidades de acabamento do
           seu projeto. Veja o catalogo:</p>
         <ul class="grade-marcas lista-marcas escondido5">
@@ -418,6 +417,7 @@
             <li><a href="pages/projetos-servicos.html">Projetos e serviços</a></li>
             <li><a href="pages/orcamento.html">Solicitar orçamento</a></li>
             <li><a href="pages/contato.html">Onde estamos</a></li>
+             <li><a href="pages/politica-de-privacidade.html">Política de Privacidade</a></li>
           </ul>
         </nav>
         <section>
@@ -439,35 +439,5 @@
 
   <script src="js/main.js" defer></script>
 </body>
-
-<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
-
-
-    <script src="script.js"></script>
-    <script>
-        const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer1');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
-    </script>
-
-    <script src="script.js"></script>
-    <script>
-        const observer1 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer2');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
-    </script>
-
 
 </html>

@@ -17,6 +17,14 @@
 </head>
 
 <body>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <a class="whats-btn" href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank"
+      rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
   <header class="site-header">
     <nav class="navegacao" aria-label="Navegação principal">
@@ -137,7 +145,7 @@
     </section>
   </main>
 
-<footer class="rodape">
+  <footer class="rodape">
     <div class="container">
       <section class="rodape-grid" aria-labelledby="titulo-rodape">
         <article>
@@ -152,6 +160,7 @@
             <li><a href="pages/projetos-servicos.html">Projetos e serviços</a></li>
             <li><a href="pages/orcamento.html">Solicitar orçamento</a></li>
             <li><a href="pages/contato.html">Onde estamos</a></li>
+             <li><a href="pages/politica-de-privacidade.html">Política de Privacidade</a></li>
           </ul>
         </nav>
         <section>
@@ -166,43 +175,12 @@
       <div class="rodape-base">
         <p>© 2012–2026 Personal Pisos Projetos e Decorações. Todos os direitos reservados.</p>
         <p>Atendimento de segunda a sexta, das 8h às 17h e sábados das 8h às 14h.</p>
-        
+
       </div>
     </div>
   </footer>
   
   <script src="../js/main.js" defer></script>
 </body>
-
-<!--Script JS para selecionar somente os elementos escondidos para a transição(separado por 2 categorias que essas transições combinam)-->
-
-
-    <script src="script.js"></script>
-    <script>
-        const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer1');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido1, .escondido2, .escondido3, .escondido4').forEach(el => observer.observe(el));
-    </script>
-
-    <script src="script.js"></script>
-    <script>
-        const observer1 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('aparecer2');
-    }
-    });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.escondido5').forEach(el => observer.observe(el));
-    </script>
-
-
 
 </html>
