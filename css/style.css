@@ -361,7 +361,7 @@ main {
   border-radius: 999px;
   background: var(--azul-petroleo);
   color: var(--dourado);
-  border-color: var(--dourado);
+  border: 2px solid var(--azul-petroleo);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.075em;
@@ -382,6 +382,8 @@ main {
   border-color: var(--dourado);
   background: var(--azul-petroleo);
   color: var(--dourado);
+  border: 1px solid var(--dourado);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .botao-secundario:hover,
@@ -2264,4 +2266,40 @@ footer {
     padding: 0.65rem 0.5rem;
     color: var(--creme);
   }
+}
+
+
+.consentimento {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.consentimento input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem; /* alinha com a primeira linha do texto */
+  accent-color: var(--azul-petroleo);
+  cursor: pointer;
+}
+
+.consentimento a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.consentimento a:hover {
+  color: var(--azul-petroleo);
+}
+
+.consentimento input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--dourado);
+  outline-offset: 2px;
 }
