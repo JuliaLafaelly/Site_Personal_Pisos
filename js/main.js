@@ -1,3 +1,110 @@
+(() => {
+  'use strict';
+
+  const overlay = document.querySelector('[data-intro]');
+  if (!overlay) return;
+
+  const skipButton = overlay.querySelector('[data-intro-skip]');
+  const slogan = overlay.querySelector('[data-intro-slogan]');
+  const sessionKey = 'personalPisosIntroSeen';
+  const fullSlogan = 'Realizando sonhos, construímos histórias';
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+  let isOpen = false;
+  let closeTimer;
+  let removeTimer;
+
+  // O texto é real para leitores de tela; cada letra animada fica decorativa.
+  function prepareSlogan() {
+    if (!slogan || slogan.dataset.ready === 'true') return;
+    slogan.dataset.ready = 'true';
+    slogan.setAttribute('aria-label', fullSlogan);
+    let letterIndex = 0;
+    fullSlogan.split(' ').forEach((word) => {
+      const wordElement = document.createElement('span');
+      wordElement.className = 'intro-word';
+      wordElement.setAttribute('aria-hidden', 'true');
+      [...word].forEach((character) => {
+        const letter = document.createElement('span');
+        letter.className = 'intro-letter';
+        letter.textContent = character;
+        letter.style.setProperty('--letter-delay', `${letterIndex * 31}ms`);
+        wordElement.appendChild(letter);
+        letterIndex += 1;
+      });
+      slogan.appendChild(wordElement);
+    });
+  }
+
+  function finishIntro() {
+    if (!isOpen) return;
+    isOpen = false;
+    window.clearTimeout(closeTimer);
+    overlay.classList.add('is-closing');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.removeEventListener('keydown', handleKeydown);
+    removeTimer = window.setTimeout(() => {
+      overlay.hidden = true;
+      overlay.classList.remove('is-closing', 'is-active');
+      document.body.classList.remove('intro-open');
+      document.documentElement.classList.remove('intro-pending');
+      document.getElementById('conteudo')?.focus({ preventScroll: true });
+    }, 540);
+  }
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      finishIntro();
+      return;
+    }
+
+    // O botão de pular é o único controle da abertura: mantém o foco dentro do diálogo.
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      skipButton?.focus({ preventScroll: true });
+    }
+  }
+
+  let alreadySeen = false;
+  try {
+    alreadySeen = window.sessionStorage.getItem(sessionKey) === '1';
+  } catch (_) {
+    // Se o navegador bloquear o armazenamento, ainda é possível exibir e pular a intro.
+  }
+
+  if (alreadySeen || reducedMotion || !skipButton) return;
+
+  try {
+    window.sessionStorage.setItem(sessionKey, '1');
+  } catch (_) {
+    // A animação continua funcional mesmo sem sessionStorage.
+  }
+
+  prepareSlogan();
+  overlay.hidden = false;
+  overlay.setAttribute('aria-hidden', 'false');
+  overlay.classList.add('is-active');
+  document.body.classList.add('intro-open');
+  isOpen = true;
+  skipButton.focus({ preventScroll: true });
+  document.addEventListener('keydown', handleKeydown);
+  skipButton.addEventListener('click', finishIntro, { once: true });
+
+  // Mostra a cena por cerca de 3,3 s; a saída visual dura mais 540 ms.
+  closeTimer = window.setTimeout(finishIntro, 3300);
+
+  // Caso a pessoa reduza movimento com a página já aberta, a intro desaparece sem animar.
+  window.matchMedia?.('(prefers-reduced-motion: reduce)').addEventListener?.('change', (event) => {
+    if (event.matches) {
+      window.clearTimeout(removeTimer);
+      overlay.style.transition = 'none';
+      finishIntro();
+    }
+  });
+})();
+
+
+
 const slides = document.querySelectorAll('.slide');
 let indiceSlide = 0;
 let intervaloSlides = null;
