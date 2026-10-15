@@ -2570,7 +2570,7 @@ footer {
 }
 
 .rodape {
-  margin-top: 4rem;
+  margin-top: 0;
   padding: 1.35rem 1rem;
   background: var(--grafite, #28231f);
   color: rgba(255, 255, 255, 0.82);
