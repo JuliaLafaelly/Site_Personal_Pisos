@@ -13,7 +13,6 @@
   let closeTimer;
   let removeTimer;
 
-  // O texto é real para leitores de tela; cada letra animada fica decorativa.
   function prepareSlogan() {
     if (!slogan || slogan.dataset.ready === 'true') return;
     slogan.dataset.ready = 'true';
@@ -58,7 +57,6 @@
       return;
     }
 
-    // O botão de pular é o único controle da abertura: mantém o foco dentro do diálogo.
     if (event.key === 'Tab') {
       event.preventDefault();
       skipButton?.focus({ preventScroll: true });
@@ -69,7 +67,7 @@
   try {
     alreadySeen = window.sessionStorage.getItem(sessionKey) === '1';
   } catch (_) {
-    // Se o navegador bloquear o armazenamento, ainda é possível exibir e pular a intro.
+
   }
 
   if (alreadySeen || reducedMotion || !skipButton) return;
@@ -77,7 +75,7 @@
   try {
     window.sessionStorage.setItem(sessionKey, '1');
   } catch (_) {
-    // A animação continua funcional mesmo sem sessionStorage.
+
   }
 
   prepareSlogan();
@@ -90,10 +88,9 @@
   document.addEventListener('keydown', handleKeydown);
   skipButton.addEventListener('click', finishIntro, { once: true });
 
-  // Mostra a cena por cerca de 3,3 s; a saída visual dura mais 540 ms.
+ 
   closeTimer = window.setTimeout(finishIntro, 3300);
 
-  // Caso a pessoa reduza movimento com a página já aberta, a intro desaparece sem animar.
   window.matchMedia?.('(prefers-reduced-motion: reduce)').addEventListener?.('change', (event) => {
     if (event.matches) {
       window.clearTimeout(removeTimer);
@@ -134,7 +131,6 @@ if (slides.length) {
   }
 }
 
-// Slider de logos, caso exista em alguma página
 const slidesLogo = document.querySelectorAll('.slideLogo');
 let slideAtualLogo = 0;
 let trocandoLogo = false;
@@ -166,7 +162,6 @@ if (slidesLogo.length) {
   }
 }
 
-// Marca como atual o link da página aberta
 function normalizarCaminho(caminho) {
   const semQueryOuHash = caminho.split(/[?#]/)[0];
   let caminhoLimpo = semQueryOuHash.replace(/\\/g, '/').replace(/\/+$/, '');
