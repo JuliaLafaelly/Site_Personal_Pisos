@@ -614,7 +614,7 @@ main {
   display: flex;
   align-items: flex-end;
   padding: clamp(3rem, 8vw, 7rem) 0 3.5rem;
-  background: linear-gradient(90deg, rgba(21, 19, 17, 0.83), rgba(21, 19, 17, 0.26)), url('../imagens/imagemfundoprincipal.jpg') center / cover;
+  background: linear-gradient(90deg, rgba(21, 19, 17, 0.83), rgba(21, 19, 17, 0.26)), url('../imagens/imagemfundoprincipal.jpeg') center / cover;
   color: var(--branco);
 }
 
@@ -1528,7 +1528,7 @@ footer {
       rgba(21, 19, 17, 0.83),
       rgba(21, 19, 17, 0.26)
     ),
-    url('../assets/imagens/imagemfundoprincipal.jpg') center / cover no-repeat;
+    url('../assets/imagens/imagemfundoprincipal.jpeg') center / cover no-repeat;
 
   color: var(--branco);
 }
