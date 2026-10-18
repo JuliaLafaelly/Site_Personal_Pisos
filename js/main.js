@@ -341,3 +341,21 @@ if (burger && menuPrincipal) {
     if (window.innerWidth > 1050) fecharMenu();
   });
 }
+
+
+document.querySelectorAll('[data-whatsapp-form]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const dados = new FormData(form);
+    const linhas = ['Olá! Recebi um contato pelo site Personal Pisos.'];
+    for (const [nome, valor] of dados.entries()) {
+      if (nome === 'consentimento' || !String(valor).trim()) continue;
+      const campo = form.querySelector(`[name="${CSS.escape(nome)}"]`);
+      const rotulo = campo?.labels?.[0]?.textContent?.replace(/\s+/g, ' ').trim() || nome;
+      linhas.push(`${rotulo}: ${String(valor).trim()}`);
+    }
+    const destino = `https://wa.me/5511976970440?text=${encodeURIComponent(linhas.join('\n'))}`;
+    window.open(destino, '_blank', 'noopener,noreferrer');
+  });
+});

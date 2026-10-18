@@ -118,7 +118,12 @@ As páginas internas ficam dentro da pasta `pages`, enquanto o CSS, JavaScript e
 Tivemos algumas dificuldades para mexer no versionamento do Github.
 
 ## Paleta de cores
+
+**Paleta de cores utilizada no site**
 ![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
+
+**Paleta de cores antiga**
+![Paleta de cores antiga](assets/imagens/paleta_antiga.png)
 
 ## Conclusão
 
