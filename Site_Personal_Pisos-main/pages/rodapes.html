@@ -1,0 +1,389 @@
+```html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça os modelos de rodapés e acabamentos da Personal Pisos.">
+  <title>Rodapés | Personal Pisos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/imagens/Logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .rodapes-intro {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .rodapes-intro p {
+      line-height: 1.8;
+    }
+
+    .galeria-rodapes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 35px;
+    }
+
+    .cartao-rodape {
+      overflow: hidden;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cartao-rodape:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+    }
+
+    .rodape-imagem {
+      overflow: hidden;
+      height: 260px;
+      background: #f3f1ee;
+    }
+
+    .rodape-imagem img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .cartao-rodape:hover .rodape-imagem img {
+      transform: scale(1.06);
+    }
+
+    .rodape-conteudo {
+      padding: 24px;
+    }
+
+    .rodape-conteudo h3 {
+      margin: 0 0 12px;
+    }
+
+    .rodape-conteudo p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .rodape-destaque {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 55px;
+      padding: 35px;
+      border-radius: 14px;
+      background: #f2f0ed;
+    }
+
+    .rodape-destaque h2 {
+      margin-top: 0;
+    }
+
+    .rodape-destaque p {
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+
+    .rodape-destaque .botao {
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 900px) {
+      .galeria-rodapes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .rodape-destaque {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .galeria-rodapes {
+        grid-template-columns: 1fr;
+      }
+
+      .rodape-imagem {
+        height: 240px;
+      }
+
+      .rodape-conteudo {
+        padding: 20px;
+      }
+
+      .rodape-destaque {
+        padding: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cartao-rodape,
+      .rodape-imagem img {
+        transition: none;
+      }
+
+      .cartao-rodape:hover {
+        transform: none;
+      }
+
+      .cartao-rodape:hover .rodape-imagem img {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a class="marca-site" href="../index.html">
+        <img src="../assets/imagens/Logo.jpeg"
+             alt="Personal Pisos Projetos e Decorações"
+             class="logo" width="52" height="52">
+        <span>Personal Pisos <small>Projetos e Decorações</small></span>
+      </a>
+
+      <button class="burger" id="burger" type="button"
+              aria-label="Abrir menu" aria-expanded="false"
+              aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
+        <li><a href="../index.html" class="menu-link">Início</a></li>
+        <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+
+        <li class="menu-grupo">
+          <details class="menu-details">
+            <summary class="menu-link submenu-toggle">
+              Pisos <span class="submenu-seta" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="submenu" aria-label="Pisos">
+              <li><a class="submenu-link" href="pisos-laminados.html">Laminados</a></li>
+              <li><a class="submenu-link" href="pisos-vinilicos.html">Vinílicos</a></li>
+              <li><a class="submenu-link" href="carpetes-tapetes.html">Carpetes</a></li>
+              <li><a class="submenu-link" href="rodapes.html">Rodapés</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="menu-grupo">
+          <details class="menu-details">
+            <summary class="menu-link submenu-toggle">
+              Decoração <span class="submenu-seta" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="submenu" aria-label="Decoração">
+              <li><a class="submenu-link" href="papeis-de-parede.html">Papéis de parede</a></li>
+              <li><a class="submenu-link" href="persianas.html">Persianas</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a href="projetos-servicos.html" class="menu-link">Serviços</a></li>
+        <li><a href="orcamento.html" class="menu-link">Orçamento</a></li>
+        <li><a href="contato.html" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <a class="whats-btn"
+       href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento%20de%20rodapés."
+       target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+
+    <section class="page-banner" aria-labelledby="titulo-pagina">
+      <div class="container escondido5">
+        <p class="breadcrumb">Catálogo · Acabamentos</p>
+        <h1 class="titulo-pagina" id="titulo-pagina">Rodapés</h1>
+        <p>O detalhe que conecta piso e parede e valoriza cada ambiente.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-clara" aria-labelledby="titulo-modelos">
+      <div class="container">
+        <div class="rodapes-intro">
+          <p class="kicker">Acabamentos que fazem a diferença</p>
+          <h2 class="titulo-secao" id="titulo-modelos">Modelos de rodapés</h2>
+          <p>
+            Na Personal Pisos, você encontra opções para combinar com diferentes
+            estilos de decoração. Escolha o acabamento que valoriza seu piso,
+            harmoniza com as paredes e deixa o ambiente ainda mais bonito.
+          </p>
+        </div>
+
+        <div class="galeria-rodapes">
+          <article class="cartao-rodape">
+            <div class="rodape-imagem">
+              <img
+                src="../assets/imagens/rodape-branco.jpg"
+                alt="Modelo de rodapé branco para acabamento de ambientes"
+                width="800"
+                height="600"
+                loading="lazy">
+            </div>
+            <div class="rodape-conteudo">
+              <h3>Rodapé branco</h3>
+              <p>
+                Versátil e elegante, combina com diferentes cores de piso
+                e estilos de decoração, trazendo um acabamento clean.
+              </p>
+              <a class="botao"
+                 href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20conhecer%20os%20modelos%20de%20rodapé%20branco."
+                 target="_blank" rel="noopener noreferrer">
+                Consultar modelo
+              </a>
+            </div>
+          </article>
+
+          <article class="cartao-rodape">
+            <div class="rodape-imagem">
+              <img
+                src="../assets/imagens/rodape-amadeirado.jpg"
+                alt="Modelo de rodapé amadeirado"
+                width="800"
+                height="600"
+                loading="lazy">
+            </div>
+            <div class="rodape-conteudo">
+              <h3>Rodapé amadeirado</h3>
+              <p>
+                Ideal para composições aconchegantes, permite criar
+                continuidade visual com pisos e elementos em madeira.
+              </p>
+              <a class="botao"
+                 href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20conhecer%20os%20modelos%20de%20rodapé%20amadeirado."
+                 target="_blank" rel="noopener noreferrer">
+                Consultar modelo
+              </a>
+            </div>
+          </article>
+
+          <article class="cartao-rodape">
+            <div class="rodape-imagem">
+              <img
+                src="../assets/imagens/rodape-preto.jpg"
+                alt="Modelo de rodapé preto para decoração contemporânea"
+                width="800"
+                height="600"
+                loading="lazy">
+            </div>
+            <div class="rodape-conteudo">
+              <h3>Rodapé preto</h3>
+              <p>
+                Uma escolha marcante para projetos contemporâneos,
+                com contraste e personalidade no acabamento.
+              </p>
+              <a class="botao"
+                 href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20conhecer%20os%20modelos%20de%20rodapé%20preto."
+                 target="_blank" rel="noopener noreferrer">
+                Consultar modelo
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="rodape-destaque">
+          <div>
+            <p class="kicker">Conte com nossa equipe</p>
+            <h2 class="titulo-secao">O acabamento ideal para seu projeto.</h2>
+            <p>
+              Consulte cores, medidas, materiais e disponibilidade.
+              Nossa equipe pode ajudar você a escolher uma opção compatível
+              com seu piso e com as características do ambiente.
+            </p>
+          </div>
+          <a class="botao"
+             href="https://wa.me/5511976970440?text=Olá!%20Quero%20um%20orçamento%20de%20rodapés."
+             target="_blank" rel="noopener noreferrer">
+            Solicitar orçamento
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-relacionados">
+      <div class="container grade-dupla escondido2">
+        <article>
+          <p class="kicker">Continue explorando</p>
+          <h2 class="titulo-secao" id="titulo-relacionados">Finalize seu projeto com harmonia.</h2>
+          <p>
+            Combine pisos e acabamentos para criar um ambiente completo,
+            elegante e coerente com seu estilo.
+          </p>
+        </article>
+
+        <aside class="cartao-informacao">
+          <h2>Outras possibilidades</h2>
+          <ul class="lista-contato">
+            <li><a class="link-seta" href="pisos-laminados.html">Ver pisos laminados</a></li>
+            <li><a class="link-seta" href="pisos-vinilicos.html">Ver pisos vinílicos</a></li>
+            <li><a class="link-seta" href="orcamento.html">Solicitar orçamento</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <section class="rodape-grid" aria-labelledby="titulo-rodape">
+        <article>
+          <h2 id="titulo-rodape">Personal Pisos Projetos e Decorações</h2>
+          <p>Há 15 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
+          <p><a class="link-seta" href="contato.html">Fale com a nossa equipe</a></p>
+        </article>
+
+        <nav aria-label="Navegação complementar">
+          <h3>Explore</h3>
+          <ul class="rodape-menu">
+            <li><a href="sobre.html">Sobre a Personal</a></li>
+            <li><a href="projetos-servicos.html">Projetos e serviços</a></li>
+            <li><a href="orcamento.html">Solicitar orçamento</a></li>
+            <li><a href="contato.html">Onde estamos</a></li>
+            <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h3>Atendimento</h3>
+          <address>
+            <p>Rua Guaiaúna, 537<br>Penha de França, São Paulo – SP</p>
+            <p>
+              <a href="tel:+551129227695">(11) 2922-7695</a><br>
+              <a href="https://wa.me/5511976970440" target="_blank" rel="noopener noreferrer">
+                WhatsApp: (11) 97697-0440
+              </a>
+            </p>
+          </address>
+        </section>
+      </section>
+
+      <div class="rodape-base">
+        <p>© 2012–2026 Personal Pisos Projetos e Decorações. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h e sábados das 8h às 14h.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
+```

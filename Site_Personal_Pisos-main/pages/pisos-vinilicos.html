@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça nossa coleção de pisos vinílicos em diferentes cores e estilos. Personal Pisos Projetos e Decorações.">
+  <title>Pisos Vinílicos | Personal Pisos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/imagens/Logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .vinilicos-intro {
+      max-width: 760px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    .vinilicos-intro .kicker {
+      margin-bottom: 10px;
+    }
+
+    .vinilicos-intro h2 {
+      margin-bottom: 16px;
+    }
+
+    .galeria-vinilicos {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .cartao-vinilico {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cartao-vinilico:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    .vinilico-imagem {
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: #f1eee8;
+    }
+
+    .vinilico-imagem img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .cartao-vinilico:hover .vinilico-imagem img {
+      transform: scale(1.08);
+      filter: brightness(1.04);
+    }
+
+    .vinilico-conteudo {
+      padding: 24px;
+    }
+
+    .vinilico-conteudo h3 {
+      margin: 0 0 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+
+    .vinilico-conteudo p {
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .vinilico-conteudo .botao {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+    }
+
+    .vinilico-destaque {
+      margin-top: 54px;
+      padding: 34px;
+      border-radius: 14px;
+      background: #f0eee8;
+      text-align: center;
+    }
+
+    .vinilico-destaque h2 {
+      margin-bottom: 12px;
+    }
+
+    .vinilico-destaque p {
+      max-width: 650px;
+      margin: 0 auto 22px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .galeria-vinilicos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .galeria-vinilicos {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .vinilico-conteudo {
+        padding: 20px;
+      }
+
+      .vinilico-destaque {
+        padding: 26px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cartao-vinilico,
+      .vinilico-imagem img {
+        transition: none;
+      }
+
+      .cartao-vinilico:hover,
+      .cartao-vinilico:hover .vinilico-imagem img {
+        transform: none;
+        filter: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navegacao" aria-label="Navegação principal">
+
+      <a class="marca-site" href="../index.html">
+        <img src="../assets/imagens/Logo.jpeg" alt="Personal Pisos Projetos e Decorações" class="logo" width="52" height="52">
+        <span>Personal Pisos <small>Projetos e Decorações</small></span>
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
+        <li><a href="../index.html" class="menu-link">Início</a></li>
+        <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+
+        <li class="menu-grupo">
+          <details class="menu-details">
+            <summary class="menu-link submenu-toggle">
+              Pisos <span class="submenu-seta" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="submenu" aria-label="Pisos">
+              <li><a class="submenu-link" href="pisos-laminados.html">Laminados</a></li>
+              <li><a class="submenu-link" href="pisos-vinilicos.html">Vinílicos</a></li>
+              <li><a class="submenu-link" href="carpetes-tapetes.html">Carpetes</a></li>
+              <li><a class="submenu-link" href="rodapes.html">Rodapés</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="menu-grupo">
+          <details class="menu-details">
+            <summary class="menu-link submenu-toggle">
+              Decoração <span class="submenu-seta" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="submenu" aria-label="Decoração">
+              <li><a class="submenu-link" href="papeis-de-parede.html">Papéis de parede</a></li>
+              <li><a class="submenu-link" href="persianas.html">Persianas</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li><a href="projetos-servicos.html" class="menu-link">Serviços</a></li>
+        <li><a href="orcamento.html" class="menu-link">Orçamento</a></li>
+        <li><a href="contato.html" class="menu-link">Contato</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <a class="whats-btn" href="https://wa.me/5511976970440?text=Olá!%20Gostaria%20de%20um%20orçamento%20de%20piso%20vinílico." target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span><strong>Click</strong><br>Orçamento via<br><b>WhatsApp</b></span>
+    </a>
+
+    <section class="page-banner" aria-labelledby="titulo-pagina">
+      <div class="container escondido5">
+        <p class="breadcrumb">Catálogo · Pisos</p>
+        <h1 class="titulo-pagina" id="titulo-pagina">Pisos vinílicos</h1>
+        <p>Conforto, beleza e versatilidade para transformar seus ambientes.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-clara" aria-labelledby="titulo-colecao">
+      <div class="container">
+
+        <div class="vinilicos-intro">
+          <p class="kicker">Nossa coleção</p>
+          <h2 class="titulo-secao" id="titulo-colecao">Encontre o estilo ideal para seu ambiente.</h2>
+          <p class="texto">Explore diferentes tonalidades e escolha a opção que combina com seu projeto. Nossa equipe pode ajudar você a encontrar o acabamento ideal.</p>
+        </div>
+
+        <div class="galeria-vinilicos">
+
+          <article class="cartao-vinilico">
+            <div class="vinilico-imagem">
+              <img src="../assets/imagens/vinilico-mel-caramelo.jpg" alt="Piso vinílico na tonalidade mel caramelo" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="vinilico-conteudo">
+              <h3>Mel Caramelo</h3>
+              <p>Uma tonalidade acolhedora para criar ambientes com sensação de conforto e personalidade.</p>
+              <a class="botao" href="https://wa.me/5511976970440?text=Olá!%20Tenho%20interesse%20no%20piso%20vinílico%20mel%20caramelo." target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Consultar modelo
+              </a>
+            </div>
+          </article>
+
+          <article class="cartao-vinilico">
+            <div class="vinilico-imagem">
+              <img src="../assets/imagens/vinilico-verde-oliva.jpg" alt="Piso vinílico na tonalidade verde oliva" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="vinilico-conteudo">
+              <h3>Verde Oliva</h3>
+              <p>Uma opção de personalidade para projetos que valorizam combinações modernas e naturais.</p>
+              <a class="botao" href="https://wa.me/5511976970440?text=Olá!%20Tenho%20interesse%20no%20piso%20vinílico%20verde%20oliva." target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Consultar modelo
+              </a>
+            </div>
+          </article>
+
+          <article class="cartao-vinilico">
+            <div class="vinilico-imagem">
+              <img src="../assets/imagens/vinilico-areia-bege.jpg" alt="Piso vinílico na tonalidade areia bege" width="1200" height="900" loading="lazy">
+            </div>
+            <div class="vinilico-conteudo">
+              <h3>Areia Bege</h3>
+              <p>Uma tonalidade neutra e versátil para composições leves, elegantes e atemporais.</p>
+              <a class="botao" href="https://wa.me/5511976970440?text=Olá!%20Tenho%20interesse%20no%20piso%20vinílico%20areia%20bege." target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Consultar modelo
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="vinilico-destaque">
+          <h2 class="titulo-secao">Vamos encontrar o piso ideal?</h2>
+          <p>Converse com nossa equipe para consultar opções, disponibilidade, medidas e condições de instalação para o seu ambiente.</p>
+          <a class="botao" href="orcamento.html">Solicitar orçamento</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="secao secao-cinza" aria-labelledby="titulo-relacionados">
+      <div class="container grade-dupla">
+
+        <article>
+          <p class="kicker">Continue explorando</p>
+          <h2 class="titulo-secao" id="titulo-relacionados">Complete seu projeto.</h2>
+          <p>Combine pisos e acabamentos para criar ambientes harmoniosos e cheios de personalidade.</p>
+        </article>
+
+        <aside class="cartao-informacao">
+          <h2>Outras possibilidades</h2>
+          <ul class="lista-contato">
+            <li><a class="link-seta" href="pisos-laminados.html">Conhecer pisos laminados</a></li>
+            <li><a class="link-seta" href="rodapes.html">Ver opções de rodapés</a></li>
+            <li><a class="link-seta" href="papeis-de-parede.html">Explorar papéis de parede</a></li>
+            <li><a class="link-seta" href="orcamento.html">Solicitar orçamento</a></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+
+      <section class="rodape-grid" aria-labelledby="titulo-rodape">
+
+        <article>
+          <h2 id="titulo-rodape">Personal Pisos Projetos e Decorações</h2>
+          <p>Há 15 anos ajudando a transformar ambientes com curadoria, cuidado e instalação especializada.</p>
+          <p><a class="link-seta" href="contato.html">Fale com a nossa equipe</a></p>
+        </article>
+
+        <nav aria-label="Navegação complementar">
+          <h3>Explore</h3>
+          <ul class="rodape-menu">
+            <li><a href="sobre.html">Sobre a Personal</a></li>
+            <li><a href="projetos-servicos.html">Projetos e serviços</a></li>
+            <li><a href="orcamento.html">Solicitar orçamento</a></li>
+            <li><a href="contato.html">Onde estamos</a></li>
+            <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h3>Atendimento</h3>
+          <address>
+            <p>Rua Guaiaúna, 537<br>Penha de França, São Paulo – SP</p>
+            <p>
+              <a href="tel:+551129227695">(11) 2922-7695</a><br>
+              <a href="https://wa.me/5511976970440" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 97697-0440</a>
+            </p>
+          </address>
+        </section>
+
+      </section>
+
+      <div class="rodape-base">
+        <p>© 2012–2026 Personal Pisos Projetos e Decorações. Todos os direitos reservados.</p>
+        <p>Atendimento de segunda a sexta, das 8h às 17h e sábados das 8h às 14h.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+
+</body>
+</html>
