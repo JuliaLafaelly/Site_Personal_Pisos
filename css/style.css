@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../assets/vendor/fonts/cormorant-garamond-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/vendor/fonts/manrope-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
 :root {
   --preto: #151311;
   --grafite: #28231f;
@@ -2087,9 +2099,6 @@ footer {
     }
 }
 
-
-/* Modos de transição fade in e fade out */
-
 .escondido1 { /* Para textos*/
     opacity: 0;
     transform: translateY(50px);
@@ -2593,7 +2602,8 @@ footer {
   text-underline-offset: 3px;
 }
 
-.rodape-in a:hover {
+.rodape-in a:hover,
+.rodape-in a:focus-visible {
   color: var(--branco, #fff);
 }
 
@@ -2929,7 +2939,6 @@ body.intro-open {
     transition: none !important;
   }
 }
-
 /* =========================================
    CARROSSEL DE PAPÉIS DE PAREDE
    ========================================= */
@@ -3193,4 +3202,3 @@ body.intro-open {
     gap: 14px;
   }
 }
-

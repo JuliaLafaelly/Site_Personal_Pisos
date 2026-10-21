@@ -16,7 +16,6 @@
   function prepareSlogan() {
     if (!slogan || slogan.dataset.ready === 'true') return;
     slogan.dataset.ready = 'true';
-    slogan.setAttribute('aria-label', fullSlogan);
     let letterIndex = 0;
     fullSlogan.split(' ').forEach((word) => {
       const wordElement = document.createElement('span');
@@ -356,7 +355,27 @@ document.querySelectorAll('[data-whatsapp-form]').forEach((form) => {
       linhas.push(`${rotulo}: ${String(valor).trim()}`);
     }
     const destino = `https://wa.me/5511976970440?text=${encodeURIComponent(linhas.join('\n'))}`;
-    window.open(destino, '_blank', 'noopener,noreferrer');
+    const feedback = form.querySelector('[data-whatsapp-feedback]');
+    let janelaWhatsApp = null;
+    try {
+      janelaWhatsApp = window.open(destino, '_blank');
+      if (janelaWhatsApp) janelaWhatsApp.opener = null;
+    } catch (erro) {
+      janelaWhatsApp = null;
+    }
+    if (!feedback) return;
+    feedback.replaceChildren();
+    const mensagem = document.createElement('span');
+    mensagem.textContent = janelaWhatsApp
+      ? 'A mensagem foi preparada no WhatsApp. Para concluir o contato, toque em “Enviar” no aplicativo ou na página aberta.'
+      : 'O navegador pode ter bloqueado a abertura do WhatsApp. A mensagem não foi enviada; use o link abaixo e toque em “Enviar”.';
+    const link = document.createElement('a');
+    link.href = destino;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'Abrir mensagem no WhatsApp';
+    feedback.append(mensagem, document.createElement('br'), link);
+    feedback.hidden = false;
   });
 });
 
