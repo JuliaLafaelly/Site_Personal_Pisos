@@ -378,3 +378,122 @@ document.querySelectorAll('[data-whatsapp-form]').forEach((form) => {
     feedback.hidden = false;
   });
 });
+
+/* =========================================
+   CARROSSEL DE PAPÉIS DE PAREDE
+   ========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("[data-carrossel]").forEach((carrossel) => {
+        const slides = Array.from(
+            carrossel.querySelectorAll(".pp-slide")
+        );
+
+        const indicadores = Array.from(
+            carrossel.querySelectorAll(".pp-indicador")
+        );
+
+        const anterior = carrossel.querySelector(".pp-anterior");
+        const proxima = carrossel.querySelector(".pp-proxima");
+        const contador = carrossel.querySelector(".pp-contador");
+
+        if (!slides.length || !anterior || !proxima) return;
+
+        let atual = 0;
+        let temporizador;
+        let inicioToqueX = 0;
+
+        function mostrarSlide(indice) {
+            atual = (indice + slides.length) % slides.length;
+
+            slides.forEach((slide, i) => {
+                const selecionado = i === atual;
+
+                slide.classList.toggle("ativa", selecionado);
+                slide.setAttribute("aria-hidden", String(!selecionado));
+            });
+
+            indicadores.forEach((indicador, i) => {
+                const selecionado = i === atual;
+
+                indicador.classList.toggle("ativo", selecionado);
+
+                if (selecionado) {
+                    indicador.setAttribute("aria-current", "true");
+                } else {
+                    indicador.removeAttribute("aria-current");
+                }
+            });
+
+            if (contador) {
+                contador.textContent = `${atual + 1} de ${slides.length}`;
+            }
+        }
+
+        function pararAutomatico() {
+            clearInterval(temporizador);
+        }
+
+        function iniciarAutomatico() {
+            pararAutomatico();
+
+            if (slides.length < 2) return;
+
+            temporizador = setInterval(() => {
+                if (
+                    !carrossel.matches(":hover") &&
+                    !carrossel.contains(document.activeElement) &&
+                    !document.hidden
+                ) {
+                    mostrarSlide(atual + 1);
+                }
+            }, 5000);
+        }
+
+        function navegar(indice) {
+            mostrarSlide(indice);
+            iniciarAutomatico();
+        }
+
+        anterior.addEventListener("click", () => {
+            navegar(atual - 1);
+        });
+
+        proxima.addEventListener("click", () => {
+            navegar(atual + 1);
+        });
+
+        indicadores.forEach((indicador, indice) => {
+            indicador.addEventListener("click", () => {
+                navegar(indice);
+            });
+        });
+
+        carrossel.addEventListener("mouseenter", pararAutomatico);
+        carrossel.addEventListener("mouseleave", iniciarAutomatico);
+
+        carrossel.addEventListener("focusin", pararAutomatico);
+        carrossel.addEventListener("focusout", (evento) => {
+            if (!carrossel.contains(evento.relatedTarget)) {
+                iniciarAutomatico();
+            }
+        });
+
+        // Permite deslizar para os lados em telas sensíveis ao toque.
+        carrossel.addEventListener("touchstart", (evento) => {
+            inicioToqueX = evento.changedTouches[0].clientX;
+        }, { passive: true });
+
+        carrossel.addEventListener("touchend", (evento) => {
+            const fimToqueX = evento.changedTouches[0].clientX;
+            const distancia = fimToqueX - inicioToqueX;
+
+            if (Math.abs(distancia) > 50) {
+                navegar(atual + (distancia < 0 ? 1 : -1));
+            }
+        }, { passive: true });
+
+        mostrarSlide(0);
+        iniciarAutomatico();
+    });
+});
