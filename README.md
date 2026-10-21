@@ -4,11 +4,10 @@
 
 | Nome completo                    | RGM      | Usuário no GitHub                                                |
 | -------------------------------- | -------- | ---------------------------------------------------------------- |
-| Ana Beatriz Morais Lessa         | 48553867 | [@anbmorais001-maker](https://github.com/anbmorais001-maker)     |
 | Guilherme de Aquino Campos       | 48183989 | [@gaquinocampos](https://github.com/gaquinocampos)               |
 | Jhenifer Rosa Cambell            | 47794992 | [@jhenifercambell-hash](https://github.com/jhenifercambell-hash) |
 | Julia Lafaelly Frazão Nunes      | 48127507 | [@JuliaLafaelly](https://github.com/JuliaLafaelly)               |
-| Marcos Murilo Fernandes da Silva | 48159786 | [@murilomarcosfer-beep](https://github.com/murilomarcosfer-beep) |
+| Marcos Murilo Fernandes da Silva | 48159786 | [@murilomarcoszl](https://github.com/murilomarcoszl) |
 
 ## Website hospedado
 

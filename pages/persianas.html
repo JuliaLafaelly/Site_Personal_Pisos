@@ -99,11 +99,68 @@
       <section class="secao secao-clara" aria-labelledby="titulo-detalhe">
         <h2 class="sr-only" id="titulo-detalhe">Detalhes sobre Persianas</h2>
         <div class="container detalhe-produto">
-          <figure><img src="../assets/imagens/persiana.jpg" class="escondido4"
-              alt="Persiana instalada em ambiente de estar" width="1200"
-              height="800">
-            <figcaption>Persiana instalada em ambiente de estar</figcaption>
-          </figure>
+          
+<!-- CARROSSEL DE PERSIANAS -->
+<div class="pp-carrossel" data-carrossel
+     aria-label="Galeria de modelos de persianas">
+
+  <div class="pp-slides">
+
+    <figure class="pp-slide ativa">
+      <img src="../assets/imagens/persiana.jpg"
+           alt="Persiana instalada em ambiente de estar"
+           width="1200" height="800"
+           fetchpriority="high" decoding="async">
+      <figcaption>Persianas para ambientes de estar</figcaption>
+    </figure>
+
+    <figure class="pp-slide">
+      <img src="../assets/imagens/persianadealumínio-vertical.png.jpg"
+           alt="Persiana de alumínio na vertical"
+           width="1200" height="800"
+           loading="lazy" decoding="async">
+      <figcaption>Persiana de Alumínio na Vertical</figcaption>
+    </figure>
+
+    <figure class="pp-slide">
+      <img src="../assets/imagens/persianaelegante-vertical.png.jpg"
+           alt="Persina Elegante na Vertical"
+           width="1200" height="800"
+           loading="lazy" decoding="async">
+      <figcaption>Persiana Elegante na Vertical</figcaption>
+    </figure>
+
+    <figure class="pp-slide">
+      <img src="../assets/imagens/persianademadeira-horizontal.png.jpg"
+           alt="Persiana de madeira na horizontal"
+           width="1200" height="800"
+           loading="lazy" decoding="async">
+      <figcaption>Persiana de Madeira na Horizontal</figcaption>
+    </figure>
+
+  </div>
+
+  <button class="pp-seta pp-anterior" type="button"
+          aria-label="Ver imagem anterior">&#10094;</button>
+
+  <button class="pp-seta pp-proxima" type="button"
+          aria-label="Ver próxima imagem">&#10095;</button>
+
+  <div class="pp-indicadores" aria-label="Escolher imagem">
+    <button type="button" class="pp-indicador ativo"
+            aria-label="Mostrar imagem 1" aria-current="true"></button>
+    <button type="button" class="pp-indicador"
+            aria-label="Mostrar imagem 2"></button>
+    <button type="button" class="pp-indicador"
+            aria-label="Mostrar imagem 3"></button>
+    <button type="button" class="pp-indicador"
+            aria-label="Mostrar imagem 4"></button>
+  </div>
+
+  <p class="pp-contador" aria-live="polite">1 de 4</p>
+
+</div>
+
           <article>
             <p class="kicker escondido4">Janelas</p>
             <h2 class="titulo-secao escondido3">Luz bem controlada transforma a
