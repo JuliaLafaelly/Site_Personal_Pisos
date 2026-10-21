@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-
 :root {
   --preto: #151311;
   --grafite: #28231f;
@@ -2928,4 +2926,97 @@ body.intro-open {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Ajustes de acessibilidade e responsividade (outubro/2026) */
+@media (max-width: 1050px) {
+  .menu-link { font-size: 0.875rem !important; }
+}
+.submenu-link,
+.selo-reclame-aqui-texto small,
+.consentimento,
+.rodape-in {
+  font-size: max(0.875rem, 1em);
+}
+.selo-reclame-aqui-marca {
+  background: #4d7022;
+  color: #fff;
+}
+.rodape-in a {
+  color: #f0d58f;
+}
+@media (max-width: 380px) {
+  .menu-link { font-size: 0.875rem; }
+  .hero h1,
+  .hero h2 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    overflow-wrap: anywhere;
+  }
+  .whats-btn {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+  .whats-btn > span { display: none; }
+  .whats-btn i {
+    position: static;
+    font-size: 1.8rem;
+    padding: 0;
+  }
+}
+@media (min-width: 381px) and (max-width: 600px) {
+  .whats-btn {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    max-width: min(9rem, calc(100vw - 1.5rem));
+  }
+}
+
+/* Orçamento: evitar corte do título e campos estreitos em telas pequenas */
+@media (max-width: 560px) {
+  .orcamento-contato-produto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .orcamento-contato-produto label {
+    white-space: normal;
+  }
+}
+@media (max-width: 360px) {
+  .titulo-secao {
+    font-size: clamp(2rem, 11vw, 2.6rem);
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+/* Feedback do formulário e controles com área de toque confortável */
+.formulario .aviso-formulario,
+.formulario-contato .aviso-formulario {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.whatsapp-feedback {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--verde-escuro);
+  border-radius: 0.4rem;
+  background: #f1f6e9;
+  color: var(--preto);
+  font-size: 0.95rem;
+}
+.whatsapp-feedback a {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-weight: 800;
+  text-underline-offset: 0.2em;
+}
+.burger {
+  width: 44px;
+  height: 44px;
+  padding: 10px 6px;
 }

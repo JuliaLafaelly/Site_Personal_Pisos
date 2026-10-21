@@ -149,7 +149,8 @@
               </li>
             </ul>
           </article>
-          <form class="formulario-contato escondido2" action="#" method="post">
+          <form class="formulario-contato escondido2" action="#" method="post"
+            data-whatsapp-form>
             <fieldset>
               <legend>Envie uma mensagem</legend>
               <div class="campo-grid">
@@ -177,8 +178,11 @@
                   id="mensagem" name="mensagem"
                   placeholder="Conte brevemente sobre o seu ambiente ou projeto."
                   minlength="20" maxlength="1000"
-                  required></textarea></p><button class="botao"
-                type="submit">Enviar mensagem</button>
+                  required></textarea></p>
+              <p class="aviso-formulario">Ao continuar, o WhatsApp será aberto com uma mensagem preparada. Você ainda precisa tocar em “Enviar” no WhatsApp para concluir o contato. Se preferir, ligue para <a href="tel:+551129227695">(11) 2922-7695</a> ou envie um e-mail para <a href="mailto:vendas@personalpisos.com.br">vendas@personalpisos.com.br</a>.</p>
+              <button class="botao" type="submit">Enviar mensagem</button>
+              <p class="whatsapp-feedback" data-whatsapp-feedback role="status"
+                aria-live="polite" hidden></p>
 
               <label class="consentimento">
                 <input type="checkbox" name="consentimento" required>

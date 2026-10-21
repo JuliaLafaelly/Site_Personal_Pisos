@@ -117,7 +117,8 @@
             </aside>
           </article>
 
-          <form class="formulario escondido3" action="#" method="post">
+          <form class="formulario escondido3" action="#" method="post"
+            data-whatsapp-form>
             <fieldset>
               <legend>Dados do projeto</legend>
               <div class="campo-grid">
@@ -135,8 +136,7 @@
 
               <!--Começei aqui-->
 
-              <div class="campo-grid"
-                style="display: flex; gap: 15px; align-items: flex-start; width: 100%;">
+              <div class="campo-grid orcamento-contato-produto">
 
                 <!-- Campo  do Telefone(Ajustando altura da label pra ficar igual o original) -->
                 <p class="campo">
@@ -153,7 +153,7 @@
                 <!-- Campo Produto ou Serviço(O mesmo de cima, so que arrumando alguns erros encontrados ao colocar do lado da label do telefone) -->
                 <p class="campo">
                   <label for="tipo-produto"
-                    style="display: block; margin-bottom: 5px; font-size: 12px; white-space: nowrap;">Produto
+                    style="display: block; margin-bottom: 5px;">Produto
                     ou serviço
                     de interesse</label>
                   <select id="tipo-produto" name="produto" required
@@ -181,8 +181,11 @@
                   maxlength="1200"></textarea>
               </p>
 
+              <p class="aviso-formulario">Ao continuar, o WhatsApp será aberto com uma mensagem preparada. Você ainda precisa tocar em “Enviar” no WhatsApp para concluir o contato. Se preferir, ligue para <a href="tel:+551129227695">(11) 2922-7695</a> ou envie um e-mail para <a href="mailto:vendas@personalpisos.com.br">vendas@personalpisos.com.br</a>.</p>
               <button class="botao" type="submit">Enviar e Conversar com
                 Especialista</button>
+              <p class="whatsapp-feedback" data-whatsapp-feedback role="status"
+                aria-live="polite" hidden></p>
 
               <label class="consentimento">
                 <input type="checkbox" name="consentimento" required>
