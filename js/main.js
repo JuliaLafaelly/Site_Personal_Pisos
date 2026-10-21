@@ -16,7 +16,6 @@
   function prepareSlogan() {
     if (!slogan || slogan.dataset.ready === 'true') return;
     slogan.dataset.ready = 'true';
-    slogan.setAttribute('aria-label', fullSlogan);
     let letterIndex = 0;
     fullSlogan.split(' ').forEach((word) => {
       const wordElement = document.createElement('span');
