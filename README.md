@@ -114,6 +114,29 @@ Onde utilizamos a imagem SVG no site:
 
 É um símbolo vetorial de uma casa com camadas de piso, usado ao lado do título da primeira coluna do rodapé.
 
+### Pesquisa de referências de leiaute e aparência
+
+Para a pesquisa de referências de leiaute e aparência, foram consultados os três sites indicados pelo grupo:
+
+- [Arquiteto de Bolso](https://arquitetodebolso.com.br/ )
+- [Arquiteto Agora](https://arquitetoagora.com.br/ )
+- [Wild AG](https://wild-ag.ch/ )
+
+O **Arquiteto de Bolso** apresenta a proposta do serviço logo na abertura da página, destaca resultados e benefícios, explica como funciona em etapas e repete chamadas para ação junto às ofertas. Essa organização serve de referência para apresentar os serviços da Personal Pisos com clareza e facilitar o contato.
+
+O **Arquiteto Agora** organiza a página com orçamento por WhatsApp, apresentação da equipe, exemplos de antes e depois, tipos de projeto, etapas de atendimento, portfólio e depoimentos. Esses elementos ajudam a observar formas de mostrar o trabalho realizado, explicar o processo e transmitir confiança.
+
+O site suíço **Wild AG** foi observado como referência de apresentação institucional. Ele organiza competências, projetos, equipe, valores e processos em seções identificáveis, além de incluir chamadas para conhecer os projetos e entrar em contato. Essa estrutura ajuda a pensar na hierarquia das informações e na apresentação dos serviços.
+
+As referências foram consultadas para observar organização de conteúdo, hierarquia das seções, apresentação de serviços e portfólio e formas de facilitar o contato. Elas servem como inspiração; o conteúdo, os serviços e a identidade visual da Personal Pisos são próprios, sem reprodução de textos ou marcas desses sites.
+
+**Sites consultados em 22/10/2026:**
+
+- [Arquiteto de Bolso](https://arquitetodebolso.com.br/ )
+- [Arquiteto Agora](https://arquitetoagora.com.br/ )
+- [Wild AG](https://wild-ag.ch/ )
+
+
 ## Validação no W3C
 
 Todos os arquivos HTML foram submetidos ao W3C Nu HTML Checker.
