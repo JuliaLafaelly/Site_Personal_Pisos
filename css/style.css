@@ -449,8 +449,6 @@ main {
   border-radius: var(--raio);
 }
 
-
-
 .imagem-arredondada {
   max-height: 430px;
 }
@@ -532,7 +530,6 @@ main {
   color: #655b54;
 }
 
-/* Imagens dos cartões */
 .cartao-imagem {
   display: block;
   width: 100%;
@@ -541,14 +538,12 @@ main {
   transition: transform 220ms ease;
 }
 
-/* Aproximação da imagem ao passar o mouse */
 .cartao:hover .cartao-imagem,
 .cartao-produto:hover .cartao-imagem,
 .cartao-servico:hover .cartao-imagem {
   transform: scale(1.04);
 }
 
-/* Mantém o zoom dentro das bordas quando a imagem estiver dentro de um link */
 .cartao > a,
 .cartao-produto > a,
 .cartao-servico > a {
@@ -556,14 +551,12 @@ main {
   overflow: hidden;
 }
 
-/* A imagem também aumenta quando o mouse passa sobre o link */
 .cartao > a:hover .cartao-imagem,
 .cartao-produto > a:hover .cartao-imagem,
 .cartao-servico > a:hover .cartao-imagem {
   transform: scale(1.04);
 }
 
-/* Efeito opcional no cartão inteiro */
 .cartao,
 .cartao-produto,
 .cartao-servico {
@@ -626,7 +619,7 @@ main {
   display: flex;
   align-items: flex-end;
   padding: clamp(3rem, 8vw, 7rem) 0 3.5rem;
-  background: linear-gradient(90deg, rgba(21, 19, 17, 0.83), rgba(21, 19, 17, 0.26)), url('../imagens/imagemfundoprincipal.jpeg') center / cover;
+  background: linear-gradient(90deg, rgba(21, 19, 17, 0.83), rgba(21, 19, 17, 0.26)),  url('../assets/imagens/imagemfundoprincipal-opt.webp') center / cover;
   color: var(--branco);
 }
 
@@ -1379,8 +1372,6 @@ footer {
   z-index: 1;
 }
 
-
-
 .sliderLogo {
   position: relative;
   width: 100%;
@@ -1421,8 +1412,6 @@ footer {
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
 }
-
-
 
 .avaliacoes-google {
   position: relative;
@@ -1540,7 +1529,7 @@ footer {
       rgba(21, 19, 17, 0.83),
       rgba(21, 19, 17, 0.26)
     ),
-    url('../assets/imagens/imagemfundoprincipal.jpeg') center / cover no-repeat;
+    url('../assets/imagens/imagemfundoprincipal-opt.webp') center / cover no-repeat;
 
   color: var(--branco);
 }
@@ -1568,27 +1557,18 @@ footer {
   transition: transform 180ms ease;
 }
 
-/* Linha ao passar o mouse */
 .menu-link:hover::after,
 .menu-link:focus-visible::after,
 
-/* Linha permanente na página atual */
 .menu-link[aria-current="page"]::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Cor do texto da página atual */
 .menu-link[aria-current="page"] {
   color: var(--verde-escuro);
 }
 
-
-/* ================================
-   RESPONSIVIDADE
-================================ */
-
-/* Tablets e telas médias */
 @media (max-width: 1050px) {
   .navegacao {
     width: calc(100% - 2rem);
@@ -1618,7 +1598,6 @@ footer {
   }
 }
 
-/* Tablets menores */
 @media (max-width: 800px) {
   .grade-dupla,
   .grade-contato,
@@ -1662,7 +1641,6 @@ footer {
   }
 }
 
-/* Celulares */
 @media (max-width: 560px) {
   .container,
   .navegacao {
@@ -1802,7 +1780,6 @@ footer {
   }
 }
 
-/* Celulares muito pequenos */
 @media (max-width: 380px) {
   .navegacao {
     padding: 0.75rem 0;
@@ -1985,8 +1962,6 @@ footer {
   font-weight: 700;
 }
 
-/* Antes e depois / codigo da imagem da pagina inicial */
-
 .comparador {
     width: 1200px;
     max-width: 100%;
@@ -2133,12 +2108,10 @@ footer {
     transform: translateY(0);
 }
 
-.aparecer2 { /* Para elementos sem a transição X e Y */
+.aparecer2 { 
   opacity: 1;
 }
 
-
-/* Submenus: usam a navegação e os estilos-base já existentes */
 .menu-grupo {
   position: relative;
 }
@@ -2203,7 +2176,6 @@ footer {
   display: block;
 }
 
-/* Escape fecha o submenu mesmo enquanto o foco continua no summary. */
 .menu-details[data-escape-closed] > .submenu {
   display: none !important;
 }
@@ -2312,28 +2284,6 @@ footer {
   outline: 2px solid var(--dourado);
   outline-offset: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .topo {
   position: relative;
@@ -2683,17 +2633,6 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .intro-overlay[hidden] {
   display: none !important;
 }
@@ -2786,7 +2725,6 @@ footer {
   animation: intro-logo-in 850ms cubic-bezier(.2, .8, .2, 1) 260ms forwards;
 }
 
-/* A janela mostra a marca e o nome; a assinatura abaixo usa o slogan fornecido pelo usuário. */
 .intro-logo-frame img {
   display: block;
   width: 100%;
@@ -2939,9 +2877,6 @@ body.intro-open {
     transition: none !important;
   }
 }
-/* =========================================
-   CARROSSEL DE PAPÉIS DE PAREDE
-   ========================================= */
 
 .pp-carrossel {
     position: relative;
@@ -3083,11 +3018,6 @@ body.intro-open {
     }
 }
 
-
-/* =====================================
-   GALERIA DE CARPETES
-===================================== */
-
 .galeria-carpetes {
   overflow: hidden;
 }
@@ -3202,7 +3132,7 @@ body.intro-open {
     gap: 14px;
   }
 }
-/* Ajustes de acessibilidade e responsividade — preservam os carrosséis e layouts existentes */
+
 @media (max-width: 1050px) {
   .menu-link {
     font-size: 0.875rem !important;
