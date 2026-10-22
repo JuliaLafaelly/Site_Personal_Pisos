@@ -114,7 +114,7 @@ Onde utilizamos a imagem SVG no site:
 
 É um símbolo vetorial de uma casa com camadas de piso, usado ao lado do título da primeira coluna do rodapé.
 
-### Pesquisa de referências de leiaute e aparência
+## Pesquisa de referências de leiaute e aparência
 
 Para a pesquisa de referências de leiaute e aparência, foram consultados os três sites indicados pelo grupo:
 
@@ -130,7 +130,19 @@ O site suíço **Wild AG** foi observado como referência de apresentação inst
 
 As referências foram consultadas para observar organização de conteúdo, hierarquia das seções, apresentação de serviços e portfólio e formas de facilitar o contato. Elas servem como inspiração; o conteúdo, os serviços e a identidade visual da Personal Pisos são próprios, sem reprodução de textos ou marcas desses sites.
 
+##Paleta, tipografia e avaliação visual
 
+O repositório contém as imagens assets/imagens/paleta_antiga.png e assets/imagens/paleta-personal-pisos-lado-a-lado.png, que registram alternativas e comparação de paleta. A folha final mantém os principais tons como variáveis CSS: preto, grafite, marrom, azul-petróleo, verde-escuro, dourado, creme e cinzas. Os tokens permitem ajustar cores de maneira centralizada e manter a identidade visual coerente entre páginas.
+
+A tipografia usa Manrope para textos de interface e corpo e Cormorant Garamond para títulos. As fontes WOFF2 locais são carregadas com @font-face e font-display: swap. A identidade é aplicada aos botões, navegação, cartões, formulários, tabelas de especificação e rodapé.
+
+As imagens de paleta servem como registro visual de comparação.
+
+**Paleta de cores utilizada no site**
+![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
+
+**Paleta de cores antiga**
+![Paleta de cores antiga](assets/imagens/paleta_antiga.png)
 
 
 ## Validação no W3C
@@ -171,14 +183,6 @@ As páginas internas ficam dentro da pasta `pages`, enquanto o CSS, JavaScript e
 **Github**
 
 Tivemos algumas dificuldades para mexer no versionamento do Github.
-
-## Paleta de cores
-
-**Paleta de cores utilizada no site**
-![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
-
-**Paleta de cores antiga**
-![Paleta de cores antiga](assets/imagens/paleta_antiga.png)
 
 ## Conclusão
 
