@@ -144,6 +144,35 @@ As imagens de paleta servem como registro visual de comparação.
 **Paleta de cores antiga**
 ![Paleta de cores antiga](assets/imagens/paleta_antiga.png)
 
+## Dificuldades encontradas
+
+Durante o desenvolvimento do site, o grupo encontrou desafios relacionados à organização dos arquivos, à navegação entre páginas e à adaptação do layout para diferentes dispositivos.
+
+**Organização dos caminhos**
+
+As páginas internas ficam na pasta `pages/`, enquanto o CSS, o JavaScript e as imagens ficam em outras pastas. Foi necessário configurar caminhos relativos diferentes para que os arquivos fossem carregados corretamente em cada página.
+
+**Versionamento com GitHub**
+
+O grupo teve dificuldades para utilizar o GitHub e organizar o versionamento dos arquivos. Foi necessário aprender a acompanhar as alterações e manter os arquivos do projeto atualizados no repositório.
+
+**Padronização visual**
+
+Como o site possui várias páginas e categorias, foi necessário manter uma identidade visual consistente entre elas. A folha de estilos compartilhada ajudou a padronizar cores, tipografia, botões, cartões, tabelas e formulários.
+
+**Layout responsivo**
+
+Foi necessário organizar os elementos para que o conteúdo funcionasse em diferentes tamanhos de tela. O uso de CSS Grid, Flexbox e media queries ajudou a adaptar menus, cartões, formulários e outras seções.
+
+**Imagens e desempenho**
+
+Algumas imagens originais eram grandes e poderiam deixar o carregamento mais lento, principalmente em celulares. Para reduzir esse impacto, foram criadas versões WebP menores, mantidos fallbacks JPEG/PNG e configurado o carregamento tardio de imagens que ficam abaixo da primeira área visível.
+
+**Formulários e contato**
+
+Foi necessário conectar a ação dos formulários ao fluxo de atendimento da loja. Como o site está hospedado como página estática e não possui um endpoint de servidor, o envio foi direcionado ao WhatsApp. A pessoa ainda precisa abrir o aplicativo, revisar a mensagem e enviá-la; os dados não são armazenados automaticamente pelo site.
+
+Esses desafios ajudaram o grupo a compreender a importância de testar caminhos, navegação, aparência em diferentes dispositivos e funcionamento dos recursos antes da publicação.
 
 ## Validação no W3C
 
@@ -171,18 +200,6 @@ A conversa também ajudou o grupo a compreender melhor a identidade da empresa e
 **Imagem da comprovação:**
 
 ![Imagem realizada na loja](assets/imagens/nosNaLoja.jpeg)
-
-## Dificuldades encontradas
-
-Durante o desenvolvimento e a revisão do site, foram encontradas algumas dificuldades:
-
-**Organização dos caminhos**
-
-As páginas internas ficam dentro da pasta `pages`, enquanto o CSS, JavaScript e as imagens ficam em outras pastas. Por isso, foi necessário utilizar caminhos diferentes.
-
-**Github**
-
-Tivemos algumas dificuldades para mexer no versionamento do Github.
 
 ## Conclusão
 
