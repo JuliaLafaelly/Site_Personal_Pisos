@@ -21,7 +21,7 @@ A organização escolhida para o desenvolvimento do projeto foi a **Personal Pis
 
 A escolha da empresa ocorreu por ser uma organização real, com atuação no mercado de decoração e revestimentos. O grupo registrou informações sobre a história da loja, produtos e serviços, público atendido, diferenciais e formas de contato. O website foi desenvolvido para apresentar a empresa, seus produtos, serviços, formas de contato e possibilidades de orçamento para os clientes.
 
-##Processo de desenvolvimento
+## Processo de desenvolvimento
 
 O site foi dividido em páginas HTML temáticas, conectadas por uma navegação comum. A página inicial apresenta a empresa e direciona para orçamento, serviços e categorias. Páginas específicas detalham pisos laminados, pisos vinílicos, carpetes e tapetes, papéis de parede, persianas e rodapés. As páginas Sobre, Projetos e Serviços, Contato, Orçamento e Política de Privacidade complementam a experiência.
 
@@ -73,7 +73,7 @@ O website possui formulários nas páginas de contato e orçamento. Foram utiliz
 
 Os campos de telefone e CPF possuem máscaras para facilitar a digitação no formato adequado. A validação é realizada pelo próprio navegador, sem a necessidade de bibliotecas externas.
 
-##Estilização com CSS 
+## Estilização com CSS 
 
 Todas as páginas utilizam a folha de estilos compartilhada css/style.css, que mantém a identidade visual do site. A estilização inclui:
 paleta de cores definida em variáveis CSS;
