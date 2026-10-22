@@ -17,7 +17,7 @@ O website está hospedado no GitHub Pages e pode ser acessado pelo link:
 
 ## Organização escolhida
 
-A organização escolhida para o desenvolvimento do projeto foi a **Personal Pisos e Carpetes**, empresa que atua no segmento de pisos, carpetes, tapetes, persianas, papéis de parede, rodapés e decoração de interiores.
+A organização escolhida para o desenvolvimento do projeto foi a **Personal Pisos**, empresa que atua no segmento de pisos, carpetes, tapetes, persianas, papéis de parede, rodapés e decoração de interiores.
 
 A escolha da empresa ocorreu por ser uma organização real, com atuação no mercado de decoração e revestimentos. O website foi desenvolvido para apresentar a empresa, seus produtos, serviços, formas de contato e possibilidades de orçamento para os clientes.
 
