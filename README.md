@@ -126,15 +126,11 @@ O **Arquiteto de Bolso** apresenta a proposta do serviço logo na abertura da p�
 
 O **Arquiteto Agora** organiza a página com orçamento por WhatsApp, apresentação da equipe, exemplos de antes e depois, tipos de projeto, etapas de atendimento, portfólio e depoimentos. Esses elementos ajudam a observar formas de mostrar o trabalho realizado, explicar o processo e transmitir confiança.
 
-O site suíço **Wild AG** foi observado como referência de apresentação institucional. Ele organiza competências, projetos, equipe, valores e processos em seções identificáveis, além de incluir chamadas para conhecer os projetos e entrar em contato. Essa estrutura ajuda a pensar na hierarquia das informações e na apresentação dos serviços.
+O site suíço **Wild AG** foi observado como referência de apresentação institucional. Além da abertura do site ele organiza competências, projetos, equipe, valores e processos em seções identificáveis, além de incluir chamadas para conhecer os projetos e entrar em contato. Essa estrutura ajuda a pensar na hierarquia das informações e na apresentação dos serviços.
 
 As referências foram consultadas para observar organização de conteúdo, hierarquia das seções, apresentação de serviços e portfólio e formas de facilitar o contato. Elas servem como inspiração; o conteúdo, os serviços e a identidade visual da Personal Pisos são próprios, sem reprodução de textos ou marcas desses sites.
 
-**Sites consultados em 22/10/2026:**
 
-- [Arquiteto de Bolso](https://arquitetodebolso.com.br/ )
-- [Arquiteto Agora](https://arquitetoagora.com.br/ )
-- [Wild AG](https://wild-ag.ch/ )
 
 
 ## Validação no W3C
