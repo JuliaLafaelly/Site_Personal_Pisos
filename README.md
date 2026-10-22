@@ -144,6 +144,8 @@ As imagens de paleta servem como registro visual de comparação.
 **Paleta de cores antiga**
 ![Paleta de cores antiga](assets/imagens/paleta_antiga.png)
 
+## Testes efetivos 
+
 ## Dificuldades encontradas
 
 Durante o desenvolvimento do site, o grupo encontrou desafios relacionados à organização dos arquivos, à navegação entre páginas e à adaptação do layout para diferentes dispositivos.
@@ -181,6 +183,24 @@ Todos os arquivos HTML foram submetidos ao W3C Nu HTML Checker.
 Após as correções realizadas na estrutura do código, as páginas foram validadas e não apresentaram erros relevantes no W3C Validator.
 
 **Validador utilizado:** [W3C Nu HTML Checker](https://validator.w3.org/nu/)
+
+## Como desenvolver um website equivalente com IA
+
+Para criar um site equivalente com apoio de IA, o grupo começaria reunindo informações verificadas sobre a empresa: história, produtos, serviços, público, diferenciais, contatos e identidade visual. Também definiria os objetivos do site, as páginas necessárias e os recursos que a hospedagem precisa suportar.
+
+Em seguida, a IA poderia ajudar a:
+
+1. **Planejar o conteúdo:** organizar as informações em um mapa de páginas e propor a estrutura de cada seção.
+2. **Escrever rascunhos:** preparar textos para a página inicial, as categorias de produtos, a apresentação da empresa e os formulários.
+3. **Criar a estrutura HTML:** gerar páginas semânticas, com navegação, títulos, imagens, formulários e links entre as páginas.
+4. **Preparar o CSS:** sugerir paleta, tipografia, componentes compartilhados e layout responsivo com Grid, Flexbox e media queries.
+5. **Adicionar JavaScript:** implementar interações, como menu móvel, carrossel, máscaras de campos e abertura de uma mensagem de WhatsApp.
+6. **Revisar e testar:** ajudar a procurar erros de código, links quebrados, problemas de acessibilidade e oportunidades de otimização.
+
+O grupo precisaria fornecer à IA dados reais, imagens autorizadas, logotipo, preferências visuais e requisitos do projeto. Depois, deveria revisar o conteúdo e o código, comparar o resultado com o objetivo definido e testar as páginas em diferentes navegadores e tamanhos de tela. Também seria necessário confirmar que formulários, imagens, links e recursos funcionam na hospedagem escolhida.
+
+A IA pode acelerar a criação de rascunhos e sugerir soluções, mas não deve ser tratada como fonte única de informação. O grupo continua responsável por confirmar os dados da empresa, verificar direitos de uso dos materiais, testar o site e corrigir eventuais erros antes da publicação.```
+
 
 ## Contato com o responsável pela organização
 
