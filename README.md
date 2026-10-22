@@ -109,6 +109,7 @@ A inclusão de áudio e vídeo torna o website mais informativo e permite aprese
 ## Uso de SVG
 
 Onde utilizamos a imagem SVG no site:
+
 ![Ilustração da utilização da imagem SVG](assets/imagens/printImagemSVG.png)
 
 É um símbolo vetorial de uma casa com camadas de piso, usado ao lado do título da primeira coluna do rodapé.
