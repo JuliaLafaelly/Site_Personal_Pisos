@@ -130,7 +130,7 @@ O site suíço **Wild AG** foi observado como referência de apresentação inst
 
 As referências foram consultadas para observar organização de conteúdo, hierarquia das seções, apresentação de serviços e portfólio e formas de facilitar o contato. Elas servem como inspiração; o conteúdo, os serviços e a identidade visual da Personal Pisos são próprios, sem reprodução de textos ou marcas desses sites.
 
-##Paleta, tipografia e avaliação visual
+## Paleta, tipografia e avaliação visual
 
 O repositório contém as imagens assets/imagens/paleta_antiga.png e assets/imagens/paleta-personal-pisos-lado-a-lado.png, que registram alternativas e comparação de paleta. A folha final mantém os principais tons como variáveis CSS: preto, grafite, marrom, azul-petróleo, verde-escuro, dourado, creme e cinzas. Os tokens permitem ajustar cores de maneira centralizada e manter a identidade visual coerente entre páginas.
 
