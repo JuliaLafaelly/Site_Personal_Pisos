@@ -106,6 +106,9 @@ Foi utilizado recurso de vídeo na página institucional da empresa, apresentand
 
 A inclusão de áudio e vídeo torna o website mais informativo e permite apresentar os serviços de forma mais dinâmica.
 
+## Uso de SVG
+![Ilustração da utilização da imagem SVG](assets/imagens/printImagemSVG.png)
+
 ## Validação no W3C
 
 Todos os arquivos HTML foram submetidos ao W3C Nu HTML Checker.
