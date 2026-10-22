@@ -199,8 +199,7 @@ Em seguida, a IA poderia ajudar a:
 
 O grupo precisaria fornecer à IA dados reais, imagens autorizadas, logotipo, preferências visuais e requisitos do projeto. Depois, deveria revisar o conteúdo e o código, comparar o resultado com o objetivo definido e testar as páginas em diferentes navegadores e tamanhos de tela. Também seria necessário confirmar que formulários, imagens, links e recursos funcionam na hospedagem escolhida.
 
-A IA pode acelerar a criação de rascunhos e sugerir soluções, mas não deve ser tratada como fonte única de informação. O grupo continua responsável por confirmar os dados da empresa, verificar direitos de uso dos materiais, testar o site e corrigir eventuais erros antes da publicação.```
-
+A IA pode acelerar a criação de rascunhos e sugerir soluções, mas não deve ser tratada como fonte única de informação. O grupo continua responsável por confirmar os dados da empresa, verificar direitos de uso dos materiais, testar o site e corrigir eventuais erros antes da publicação.
 
 ## Contato com o responsável pela organização
 
