@@ -73,15 +73,18 @@ O website possui formulários nas páginas de contato e orçamento. Foram utiliz
 
 Os campos de telefone e CPF possuem máscaras para facilitar a digitação no formato adequado. A validação é realizada pelo próprio navegador, sem a necessidade de bibliotecas externas.
 
-## Estilização com CSS 
+## Estilização com CSS
 
-Todas as páginas utilizam a folha de estilos compartilhada css/style.css, que mantém a identidade visual do site. A estilização inclui:
-paleta de cores definida em variáveis CSS;
-tipografia consistente, com Manrope para textos e Cormorant Garamond para títulos;
-componentes visuais padronizados, como botões, cartões, tabelas de especificações e formulários;
-CSS Grid e Flexbox para organizar o conteúdo;
-media queries para adaptar as páginas a diferentes tamanhos de tela.
+Todas as páginas utilizam a folha de estilos compartilhada `css/style.css`, que mantém a identidade visual do site. A estilização inclui:
+
+- paleta de cores definida em variáveis CSS;
+- tipografia consistente, com Manrope para textos e Cormorant Garamond para títulos;
+- componentes visuais padronizados, como botões, cartões, tabelas de especificações e formulários;
+- CSS Grid e Flexbox para organizar o conteúdo;
+- media queries para adaptar as páginas a diferentes tamanhos de tela.
+
 O CSS está centralizado e reaproveitado entre as páginas. Ainda é possível revisar seletores repetidos em regras responsivas para identificar eventuais redundâncias.
+
 
 ## Recursos de áudio e vídeo
 
