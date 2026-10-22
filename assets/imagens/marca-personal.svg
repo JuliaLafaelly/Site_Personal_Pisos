@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Símbolo Personal Pisos</title>
+  <desc id="desc">Casa geométrica sobre camadas que representam pisos e revestimentos.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 29 32 10l23 19" stroke="#4d7022" stroke-width="4"/>
+    <path d="M16 27v19h32V27" stroke="#4d7022" stroke-width="3.5"/>
+    <path d="M27 46V33h10v13" stroke="#c8a457" stroke-width="3"/>
+    <path d="M10 52h44M14 57h36" stroke="#c8a457" stroke-width="2.5"/>
+    <path d="M24 25h5m6 0h5" stroke="#4d7022" stroke-width="2.5"/>
+  </g>
+</svg>
