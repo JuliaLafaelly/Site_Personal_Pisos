@@ -73,18 +73,30 @@ O website possui formulários nas páginas de contato e orçamento. Foram utiliz
 
 Os campos de telefone e CPF possuem máscaras para facilitar a digitação no formato adequado. A validação é realizada pelo próprio navegador, sem a necessidade de bibliotecas externas.
 
-## Estilização com CSS
+**Estilização com CSS**
 
-Todas as páginas utilizam a folha de estilos compartilhada `css/style.css`, que mantém a identidade visual do site. A estilização inclui:
+Todas as páginas utilizam a folha de estilos compartilhada `css/style.css`, que mantém uma identidade visual unificada. Ela define:
 
-- paleta de cores definida em variáveis CSS;
-- tipografia consistente, com Manrope para textos e Cormorant Garamond para títulos;
-- componentes visuais padronizados, como botões, cartões, tabelas de especificações e formulários;
-- CSS Grid e Flexbox para organizar o conteúdo;
-- media queries para adaptar as páginas a diferentes tamanhos de tela.
+- **Paleta de cores:** organizada em variáveis CSS para facilitar a reutilização e a manutenção.
+- **Tipografia:** Manrope para textos e Cormorant Garamond para títulos.
+- **Componentes consistentes:** estilos compartilhados para cartões, botões, tabelas de especificações e formulários.
+- **Organização do layout:** CSS Grid e Flexbox para distribuir os elementos nas páginas.
+- **Adaptação a telas:** media queries para ajustar o layout a diferentes larguras.
 
-O CSS está centralizado e reaproveitado entre as páginas. Ainda é possível revisar seletores repetidos em regras responsivas para identificar eventuais redundâncias.
+O CSS está centralizado e organizado por seções. As regras comuns são reaproveitadas entre as páginas; regras dentro de media queries podem sobrescrever estilos para adaptar o layout responsivo. A revisão para eliminar toda possível redundância ainda pode ser feita.
 
+
+**JavaScript**
+
+O arquivo `js/main.js` acrescenta interatividade ao site. Ele é utilizado para:
+
+- controlar os slides/carrosséis da página inicial;
+- abrir e fechar o menu de navegação em telas menores e indicar a página atual;
+- aplicar máscaras de digitação aos campos de telefone e CPF;
+- iniciar animações quando elementos entram na área visível da página;
+- preparar mensagens para WhatsApp nos formulários de contato e orçamento, usando `encodeURIComponent`.
+
+O JavaScript complementa a validação nativa do navegador, mas não substitui um serviço de servidor. O site não possui endpoint: os dados não são enviados nem armazenados automaticamente. A pessoa precisa abrir o WhatsApp, revisar a mensagem e tocar em **Enviar**.
 
 ## Recursos de áudio e vídeo
 
