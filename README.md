@@ -201,8 +201,6 @@ O grupo precisaria fornecer à IA dados reais, imagens autorizadas, logotipo, pr
 
 A IA pode acelerar a criação de rascunhos e sugerir soluções, mas não deve ser tratada como fonte única de informação. O grupo continua responsável por confirmar os dados da empresa, verificar direitos de uso dos materiais, testar o site e corrigir eventuais erros antes da publicação.
 
-## Uso de IA: 
-
 ## Uso de inteligência artificial
 
 O grupo utilizou a **Manus AI** para analisar o site e apontar críticas construtivas e oportunidades de melhoria. A motivação foi identificar problemas que poderiam passar despercebidos pelo grupo e usar essas observações para aperfeiçoar o site, incluindo aspectos de organização, aparência, formulários, imagens e desempenho.
