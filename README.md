@@ -146,6 +146,40 @@ As imagens de paleta servem como registro visual de comparação.
 
 ## Testes efetivos 
 
+Teste efetivo é uma verificação feita no próprio site, observando o resultado de uma ação — não apenas uma avaliação teórica do código.
+
+Exemplos para a Entrega 1:
+
+- Abrir cada página e conferir se o conteúdo é exibido corretamente.
+- Verificar se os menus e links de navegação levam às páginas certas.
+- Conferir se os elementos semânticos, como `header`, `nav`, `main`, `section`, `article` e `footer`, estão usados e organizados corretamente.
+- Preencher os formulários com dados válidos e inválidos para conferir os campos obrigatórios e a validação nativa do HTML5.
+- Verificar se os recursos de áudio e vídeo estão presentes e podem ser reproduzidos.
+- Submeter os arquivos HTML ao W3C Nu HTML Checker e corrigir os erros identificados.
+
+Exemplos para a Entrega 2:
+
+- Abrir cada página em computador e celular e conferir se o leiaute se ajusta à tela.
+- Testar o menu, os botões, os links, os cartões e as tabelas.
+- Preencher os formulários com dados válidos e inválidos e verificar as mensagens de validação.
+- Inserir números incompletos e completos nos campos de telefone e CPF para conferir as máscaras.
+- Testar o fluxo do WhatsApp e confirmar se a mensagem abre com os dados preenchidos.
+- Verificar se as imagens, o áudio e o vídeo carregam corretamente.
+- Conferir o contraste e a legibilidade das cores e fontes.
+
+**comparação visual**
+
+Foi feita uma comparação visual do site antes e depois dos ajustes para registrar a evolução do leiaute e da apresentação das páginas.
+
+**Antes dos ajustes:**
+
+![Captura do site antes dos ajustes](assets/imagens/TestesEfetivos_antes.png)
+
+**Depois dos ajustes:**
+
+![Captura do site depois dos ajustes](assets/imagens/TesteEfetivo_depois.png)
+
+
 ## Dificuldades encontradas
 
 Durante o desenvolvimento do site, o grupo encontrou desafios relacionados à organização dos arquivos, à navegação entre páginas e à adaptação do layout para diferentes dispositivos.
