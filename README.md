@@ -230,6 +230,14 @@ A conversa também ajudou o grupo a compreender melhor a identidade da empresa e
 
 ![Imagem realizada na loja](assets/imagens/nosNaLoja.jpeg)
 
+## Reflexão do grupo sobre o resultado e os aprendizados
+
+Nas Entregas 1 e 2, desenvolvemos um site de 10 páginas interligadas para apresentar a empresa, seus produtos e seus serviços. Na primeira etapa, aprendemos a organizar o conteúdo com HTML semântico, criar formulários com validação nativa e incluir recursos de áudio e vídeo. A validação no W3C também nos ajudou a identificar e corrigir problemas na estrutura das páginas.
+
+Na segunda etapa, aplicamos uma identidade visual comum às páginas com CSS, definindo paleta de cores, tipografia e componentes como cartões, botões e tabelas. O uso de Grid, Flexbox e recursos responsivos ajudou a organizar o leiaute em diferentes tamanhos de tela. Também aprendemos a importância de versionar o projeto e manter os arquivos organizados.
+
+Como grupo, percebemos que criar um site exige mais do que escrever código: é necessário planejar o conteúdo, facilitar a navegação, manter consistência visual e testar o funcionamento dos recursos. O resultado nos permitiu aplicar esses conhecimentos em um projeto ligado a uma empresa real e compreender que a revisão contínua é importante para aperfeiçoar o site.
+
 ## Conclusão
 
 A primeira etapa do projeto permitiu ao grupo desenvolver a base estrutural de um website utilizando HTML5, sem depender de estilização visual ou recursos avançados de CSS.
@@ -239,3 +247,9 @@ Durante o desenvolvimento, aprendemos a organizar páginas com elementos semânt
 Também compreendemos a importância de desenvolver um projeto baseado em uma organização real, pois o contato com o responsável contribuiu para tornar o conteúdo mais coerente com as características e necessidades da empresa.
 
 A validação no W3C ajudou o grupo a identificar e corrigir problemas no código, reforçando a importância de seguir os padrões da web e utilizar uma estrutura HTML organizada, acessível e válida.
+
+Já a segunda etapa do projeto permitiu ao grupo estilizar o website com CSS e acrescentar interações com JavaScript. Aplicamos uma identidade visual comum às páginas, com paleta de cores, tipografia e componentes consistentes, como cartões, botões e tabelas.
+
+Durante o desenvolvimento, aprendemos a organizar os elementos com CSS Grid e Flexbox, adaptar o leiaute a diferentes tamanhos de tela e reutilizar estilos em uma folha CSS principal. Também utilizamos JavaScript para implementar interações, como o menu para dispositivos móveis, máscaras nos campos de telefone e CPF e o preparo de mensagens para contato pelo WhatsApp.
+
+Essa etapa mostrou a importância de testar o site em diferentes dispositivos e verificar se os estilos, imagens, links e interações funcionam corretamente. A revisão do projeto também ajudou o grupo a identificar pontos que ainda podem ser aprimorados, como a simplificação de regras CSS repetidas e a ausência de um serviço de servidor para processar os formulários.
