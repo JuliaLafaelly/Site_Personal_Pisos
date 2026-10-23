@@ -143,6 +143,9 @@ As imagens de paleta servem como registro visual de comparação.
 **Paleta de cores 1**
 ![Paleta de cores 1](assets/imagens/paleta_antiga.png)
 
+**Paleta de cores 2**
+![Paleta de cores 2](assets/imagens/Paleta Prado Verde — Personal Pisos.png)
+
 **Paleta de cores 3 (Atual)**
 ![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
 
