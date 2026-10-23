@@ -138,7 +138,7 @@ A tipografia usa Manrope para textos de interface e corpo e Cormorant Garamond p
 
 As imagens de paleta servem como registro visual de comparação.
 
-**Paleta de cores testadas**
+**Paleta de cores testadas no site:**
 
 **Paleta de cores 1**
 ![Paleta de cores 1](assets/imagens/paleta_antiga.png)
@@ -148,6 +148,17 @@ As imagens de paleta servem como registro visual de comparação.
 
 **Paleta de cores 3 (Atual)**
 ![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
+
+**Tipografia de cores testadas no site:**
+
+Tipografia 1:
+
+Tipografia 2:
+
+Tipografia 3 (Atual):
+- Fonte principal: Manrope
+- Fonte para títulos: Cormorant Garamond
+- Status: Combinação atualmente utilizada no site.
 
 ## Testes efetivos 
 
