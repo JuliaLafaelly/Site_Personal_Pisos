@@ -211,6 +211,8 @@ As sugestões da IA foram analisadas pelo grupo antes de serem aplicadas. Para v
 
 A IA foi utilizada como apoio à análise, não como fonte única: o grupo revisou as sugestões e permanece responsável pelo conteúdo e pelas decisões finais do projeto.
 
+![Ilustração da utilização da IA](assets/imagens/printIA.png)
+
 ## Contato com o responsável pela organização
 
 O contato com o responsável pela Personal Pisos e Carpetes foi realizado por meio de:
