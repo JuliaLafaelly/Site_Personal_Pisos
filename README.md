@@ -201,6 +201,16 @@ O grupo precisaria fornecer à IA dados reais, imagens autorizadas, logotipo, pr
 
 A IA pode acelerar a criação de rascunhos e sugerir soluções, mas não deve ser tratada como fonte única de informação. O grupo continua responsável por confirmar os dados da empresa, verificar direitos de uso dos materiais, testar o site e corrigir eventuais erros antes da publicação.
 
+## Uso de IA: 
+
+## Uso de inteligência artificial
+
+O grupo utilizou a **Manus AI** para analisar o site e apontar críticas construtivas e oportunidades de melhoria. A motivação foi identificar problemas que poderiam passar despercebidos pelo grupo e usar essas observações para aperfeiçoar o site, incluindo aspectos de organização, aparência, formulários, imagens e desempenho.
+
+As sugestões da IA foram analisadas pelo grupo antes de serem aplicadas. Para verificar as observações técnicas, comparamos as descrições com os arquivos HTML, CSS e JavaScript e conferimos os caminhos das imagens e a integridade do site atualizado. As referências visuais foram consultadas diretamente nos sites indicados.
+
+A IA foi utilizada como apoio à análise, não como fonte única: o grupo revisou as sugestões e permanece responsável pelo conteúdo e pelas decisões finais do projeto.
+
 ## Contato com o responsável pela organização
 
 O contato com o responsável pela Personal Pisos e Carpetes foi realizado por meio de:
