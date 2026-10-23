@@ -152,13 +152,32 @@ As imagens de paleta servem como registro visual de comparação.
 **Tipografia de cores testadas no site:**
 
 Tipografia 1:
+- Fonte principal: Inter
+- Fonte para títulos: Montserrat
+- Status: Primeira opção testada.
 
 Tipografia 2:
+- Fonte principal: Lato
+- Fonte para títulos: Playfair Display
+- Status: Segunda opção testada.
 
 Tipografia 3 (Atual):
 - Fonte principal: Manrope
 - Fonte para títulos: Cormorant Garamond
 - Status: Combinação atualmente utilizada no site.
+
+Durante o desenvolvimento do site, foram testadas três combinações de paletas de cores e tipografias, com o objetivo de encontrar uma identidade visual que representasse melhor a marca Personal Pisos, transmitindo profissionalismo, harmonia e sofisticação.
+
+Paleta de cores 1 e Tipografia 1
+A primeira opção foi utilizada como ponto de partida para explorar uma identidade visual inicial. A combinação de Inter e Montserrat buscou transmitir modernidade, simplicidade e clareza.
+
+Paleta de cores 2 e Tipografia 2
+A segunda opção surgiu como uma alternativa para explorar uma estética mais elegante e diferenciada. A combinação de Lato e Playfair Display buscou equilibrar legibilidade e sofisticação, permitindo avaliar uma nova direção visual para a marca.
+
+Paleta de cores 3 e Tipografia 3 (Atual)
+Após avaliar as opções anteriores, foi escolhida a terceira combinação por apresentar maior harmonia entre cores e tipografia, além de proporcionar uma identidade visual mais consistente com a proposta do site. A paleta atual, junto às fontes Manrope e Cormorant Garamond, equilibra modernidade, elegância e legibilidade, oferecendo uma experiência visual mais agradável e profissional.
+
+Os testes permitiram comparar diferentes possibilidades visuais e compreender qual combinação melhor atendia aos objetivos do projeto. A terceira opção foi definida como a versão atual por apresentar o equilíbrio visual desejado e reforçar a identidade da Personal Pisos.
 
 ## Testes efetivos 
 
