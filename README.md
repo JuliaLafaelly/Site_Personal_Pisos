@@ -324,3 +324,7 @@ Já a segunda etapa do projeto permitiu ao grupo estilizar o website com CSS e a
 Durante o desenvolvimento, aprendemos a organizar os elementos com CSS Grid e Flexbox, adaptar o leiaute a diferentes tamanhos de tela e reutilizar estilos em uma folha CSS principal. Também utilizamos JavaScript para implementar interações, como o menu para dispositivos móveis, máscaras nos campos de telefone e CPF e o preparo de mensagens para contato pelo WhatsApp.
 
 Essa etapa mostrou a importância de testar o site em diferentes dispositivos e verificar se os estilos, imagens, links e interações funcionam corretamente. A revisão do projeto também ajudou o grupo a identificar pontos que ainda podem ser aprimorados, como a simplificação de regras CSS repetidas e a ausência de um serviço de servidor para processar os formulários.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE] para mais informações.
