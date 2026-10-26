@@ -327,4 +327,4 @@ Essa etapa mostrou a importância de testar o site em diferentes dispositivos e 
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE] para mais informações.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
