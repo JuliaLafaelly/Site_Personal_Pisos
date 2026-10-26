@@ -245,7 +245,9 @@ Foi necessário conectar a ação dos formulários ao fluxo de atendimento da lo
 
 Esses desafios ajudaram o grupo a compreender a importância de testar caminhos, navegação, aparência em diferentes dispositivos e funcionamento dos recursos antes da publicação.
 
-## Validação no W3C
+# Validação no W3C
+
+## Validação do HTML
 
 Todos os arquivos HTML foram submetidos ao W3C Nu HTML Checker.
 
@@ -253,7 +255,17 @@ Após as correções realizadas na estrutura do código, as páginas foram valid
 
 **Validador utilizado:** [W3C Nu HTML Checker](https://validator.w3.org/nu/)
 
-![Captura da validação do site](assets/imagens/Validador%20CSS.png)
+**colocar a img da validacao**
+
+## Validação do CSS
+
+Todos os arquivos CSS foram submetidos ao W3C CSS Validation Service.
+
+Após as correções realizadas nas folhas de estilo, os arquivos foram validados e não apresentaram erros relevantes no validador do W3C.
+
+**Validador utilizado:** [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+![Captura da validação do CSS do site](assets/imagens/Validador%20CSS.png)
 
 ## Como seria o processo de obter o mesmo resultado (ou equivalente) se o website fosse desenvolvido com IA
 
