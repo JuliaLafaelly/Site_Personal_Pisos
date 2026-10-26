@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="intro-overlay" data-intro hidden aria-hidden="true">
+    <div class="intro-overlay" data-intro hidden>
       <span class="intro-floor-tile" aria-hidden="true"></span>
       <span class="intro-floor-tile" aria-hidden="true"></span>
       <span class="intro-floor-tile" aria-hidden="true"></span>
@@ -118,6 +118,7 @@
       </a>
 
       <section class="hero" aria-labelledby="titulo-home">
+        <h1 class="sr-only">seção do titulo inicial</h1>
         <div class="slider">
 
           <article class="slide ativo">
@@ -129,12 +130,14 @@
                 height="498" fetchpriority="high" decoding="async"
                 loading="eager"></picture>
             <div class="slide-conteudo">
-              <h1 id="titulo-home">Realizando Sonhos,</h1>
+              <article>
+              <h1 id="titulo-home" data-heading-offset="true">Realizando Sonhos,</h1>
               <p class="kicker">construímos histórias.</p>
               <p class="hero-acoes"><a class="botao"
                   href="pages/orcamento.html">Pedir orçamento</a> <a
                   class="botao botao-secundario"
                   href="pages/sobre.html">Conhecer a Personal</a></p>
+              </article>
             </div>
           </article>
           <article class="slide">
@@ -222,6 +225,7 @@
       </section>
 
       <section class="secao secao-clara" aria-labelledby="titulo-personal">
+        <h1 class="sr-only">Titulo-seção</h1>
         <div class="container grade-dupla">
           <article>
 
@@ -256,7 +260,7 @@
             srcset="assets/imagens/imagemfundoprincipal-480.webp 480w, assets/imagens/imagemfundoprincipal-900.webp 900w, assets/imagens/imagemfundoprincipal-1400.webp 1400w, assets/imagens/imagemfundoprincipal-opt.webp 1600w"
             sizes="(max-width: 900px) 100vw, 1200px"><img
             src="assets/imagens/imagemfundoprincipal.jpeg" alt
-            class="imagemFundoTela" / loading="lazy" decoding="async"
+            class="imagemFundoTela" loading="lazy" decoding="async"
             width="1600" height="1200"></picture>
       </section>
 
@@ -468,8 +472,8 @@
         </div>
       </section>
 
-      <section class="secao secao-escura"
-        aria-labelledby="titulo-servicos-home">
+      <section class="secao secao-escura" aria-labelledby="titulo-servicos-home">
+        <h1 class="sr-only">titulo servicos</h1>
         <div class="container grade-dupla">
           <article>
             <p class="kicker escondido4">Do planejamento à entrega</p>
@@ -575,6 +579,7 @@
       </section>
 
       <section class="secao secao-cinza" aria-labelledby="titulo-avaliacao">
+        <h1 class="sr-only">titulo secao-avaliacao</h1>
         <div class="container">
           <div class="avaliacao escondido5">
             <article>
@@ -595,9 +600,10 @@
 
     </main>
 
-   <footer class="rodape">
+  <footer class="rodape">
       <div class="container">
         <section class="rodape-grid" aria-labelledby="titulo-rodape">
+          <h1 class="sr-only">rodape</h1>
           <article>
             <h2 id="titulo-rodape"><img class="rodape-simbolo"
                 src="assets/imagens/marca-personal.svg" alt

@@ -253,6 +253,8 @@ Após as correções realizadas na estrutura do código, as páginas foram valid
 
 **Validador utilizado:** [W3C Nu HTML Checker](https://validator.w3.org/nu/)
 
+![Captura da validação do site](assets/imagens/Validador%20CSS.png)
+
 ## Como seria o processo de obter o mesmo resultado (ou equivalente) se o website fosse desenvolvido com IA
 
 Para criar um site equivalente com apoio de IA, o grupo começaria reunindo informações verificadas sobre a empresa: história, produtos, serviços, público, diferenciais, contatos e identidade visual. Também definiria os objetivos do site, as páginas necessárias e os recursos que a hospedagem precisa suportar.
