@@ -1599,7 +1599,7 @@ footer {
 
 
 /* ================================
-   RESPONSIVIDADE
+  RESPONSIVIDADE
 ================================ */
 
 /* Tablets e telas médias */
@@ -2112,6 +2112,40 @@ footer {
         max-width: none;
     }
 }
+
+/* ajuste do mapa que estava fora do layout do site no celular*/
+
+.mapa, 
+.bloco-mapa, 
+iframe[src*="google.com/maps"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Ajuste da altura para Tablets */
+@media (max-width: 800px) {
+    .mapa, 
+    .bloco-mapa, 
+    iframe[src*="google.com/maps"] {
+        height: 280px;
+    }
+}
+
+/* Ajuste da altura para celulares tanto para telas menores e medios */
+@media (max-width: 560px) {
+    .mapa, 
+    .bloco-mapa, 
+    iframe[src*="google.com/maps"] {
+        height: 220px;
+    }
+}
+
+/*Efeitos de opaciada/animacao do site*/
 
 .escondido1 { /* Para textos*/
     opacity: 0;
@@ -2954,7 +2988,7 @@ body.intro-open {
   }
 }
 /* =========================================
-   CARROSSEL DE PAPÉIS DE PAREDE
+  CARROSSEL DE PAPÉIS DE PAREDE
    ========================================= */
 
 .pp-carrossel {
@@ -3099,7 +3133,7 @@ body.intro-open {
 
 
 /* =====================================
-   GALERIA DE CARPETES
+  GALERIA DE CARPETES
 ===================================== */
 
 .galeria-carpetes {
@@ -3325,3 +3359,4 @@ body.intro-open {
   flex: 0 0 1.45rem;
   object-fit: contain;
 }
+

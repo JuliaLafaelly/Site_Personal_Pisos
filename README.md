@@ -138,7 +138,7 @@ A tipografia usa Manrope para textos de interface e corpo e Cormorant Garamond p
 
 As imagens de paleta servem como registro visual de comparação.
 
-**Paleta de cores testadas**
+**Paleta de cores testadas no site:**
 
 **Paleta de cores 1**
 ![Paleta de cores 1](assets/imagens/paleta_antiga.png)
@@ -148,6 +148,36 @@ As imagens de paleta servem como registro visual de comparação.
 
 **Paleta de cores 3 (Atual)**
 ![Paleta de cores utilizada no site](assets/imagens/paleta-personal-pisos-lado-a-lado.png)
+
+**Tipografia de cores testadas no site:**
+
+Tipografia 1:
+- Fonte principal: Inter
+- Fonte para títulos: Montserrat
+- Status: Primeira opção testada.
+
+Tipografia 2:
+- Fonte principal: Lato
+- Fonte para títulos: Playfair Display
+- Status: Segunda opção testada.
+
+Tipografia 3 (Atual):
+- Fonte principal: Manrope
+- Fonte para títulos: Cormorant Garamond
+- Status: Combinação atualmente utilizada no site.
+
+Durante o desenvolvimento do site, foram testadas três combinações de paletas de cores e tipografias, com o objetivo de encontrar uma identidade visual que representasse melhor a marca Personal Pisos, transmitindo profissionalismo, harmonia e sofisticação.
+
+Paleta de cores 1 e Tipografia 1
+A primeira opção foi utilizada como ponto de partida para explorar uma identidade visual inicial. A combinação de Inter e Montserrat buscou transmitir modernidade, simplicidade e clareza.
+
+Paleta de cores 2 e Tipografia 2
+A segunda opção surgiu como uma alternativa para explorar uma estética mais elegante e diferenciada. A combinação de Lato e Playfair Display buscou equilibrar legibilidade e sofisticação, permitindo avaliar uma nova direção visual para a marca.
+
+Paleta de cores 3 e Tipografia 3 (Atual)
+Após avaliar as opções anteriores, foi escolhida a terceira combinação por apresentar maior harmonia entre cores e tipografia, além de proporcionar uma identidade visual mais consistente com a proposta do site. A paleta atual, junto às fontes Manrope e Cormorant Garamond, equilibra modernidade, elegância e legibilidade, oferecendo uma experiência visual mais agradável e profissional.
+
+Os testes permitiram comparar diferentes possibilidades visuais e compreender qual combinação melhor atendia aos objetivos do projeto. A terceira opção foi definida como a versão atual por apresentar o equilíbrio visual desejado e reforçar a identidade da Personal Pisos.
 
 ## Testes efetivos 
 
@@ -215,13 +245,27 @@ Foi necessário conectar a ação dos formulários ao fluxo de atendimento da lo
 
 Esses desafios ajudaram o grupo a compreender a importância de testar caminhos, navegação, aparência em diferentes dispositivos e funcionamento dos recursos antes da publicação.
 
-## Validação no W3C
+# Validação no W3C
+
+## Validação do HTML
 
 Todos os arquivos HTML foram submetidos ao W3C Nu HTML Checker.
 
 Após as correções realizadas na estrutura do código, as páginas foram validadas e não apresentaram erros relevantes no W3C Validator.
 
 **Validador utilizado:** [W3C Nu HTML Checker](https://validator.w3.org/nu/)
+
+**colocar a img da validacao**
+
+## Validação do CSS
+
+Todos os arquivos CSS foram submetidos ao W3C CSS Validation Service.
+
+Após as correções realizadas nas folhas de estilo, os arquivos foram validados e não apresentaram erros relevantes no validador do W3C.
+
+**Validador utilizado:** [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+![Captura da validação do CSS do site](assets/imagens/Validador%20CSS.png)
 
 ## Como seria o processo de obter o mesmo resultado (ou equivalente) se o website fosse desenvolvido com IA
 
@@ -292,3 +336,7 @@ Já a segunda etapa do projeto permitiu ao grupo estilizar o website com CSS e a
 Durante o desenvolvimento, aprendemos a organizar os elementos com CSS Grid e Flexbox, adaptar o leiaute a diferentes tamanhos de tela e reutilizar estilos em uma folha CSS principal. Também utilizamos JavaScript para implementar interações, como o menu para dispositivos móveis, máscaras nos campos de telefone e CPF e o preparo de mensagens para contato pelo WhatsApp.
 
 Essa etapa mostrou a importância de testar o site em diferentes dispositivos e verificar se os estilos, imagens, links e interações funcionam corretamente. A revisão do projeto também ajudou o grupo a identificar pontos que ainda podem ser aprimorados, como a simplificação de regras CSS repetidas e a ausência de um serviço de servidor para processar os formulários.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
