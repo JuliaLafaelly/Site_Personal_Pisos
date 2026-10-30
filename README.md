@@ -255,7 +255,7 @@ Após as correções realizadas na estrutura do código, as páginas foram valid
 
 **Validador utilizado:** [W3C Nu HTML Checker](https://validator.w3.org/nu/)
 
-**colocar a img da validacao**
+![Captura da validação do HTML do site](assets/imagens/ValidadorHTML.png)
 
 ## Validação do CSS
 
