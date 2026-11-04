@@ -3131,6 +3131,106 @@ body.intro-open {
     }
 }
 
+  /* Responsividade celulares */
+@media screen and (max-width: 767px) {
+
+    .detalhe-produto {
+        display: block !important;
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .detalhe-produto > figure.pp-carrossel {
+        position: relative !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto 1.5rem !important;
+        overflow: visible !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .detalhe-produto > figure.pp-carrossel > .pp-seta {
+        position: absolute !important;
+        top: 45% !important;
+        transform: translateY(-50%) !important;
+        z-index: 5 !important;
+    }
+
+    .detalhe-produto > figure.pp-carrossel > .pp-anterior { left: 8px !important; }
+    .detalhe-produto > figure.pp-carrossel > .pp-proxima { right: 8px !important; }
+
+    .detalhe-produto > figure.pp-carrossel .pp-slides,
+    .detalhe-produto > figure.pp-carrossel .pp-indicadores,
+    .detalhe-produto > figure.pp-carrossel .pp-contador {
+        position: relative !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .detalhe-produto > figure.pp-carrossel .pp-indicadores {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 28px !important;
+        margin-top: 8px !important;
+    }
+
+    .detalhe-produto > figure.pp-carrossel .pp-contador {
+        display: block !important;
+        text-align: center !important;
+        line-height: 1.2 !important;
+        margin-top: 4px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .detalhe-produto article,
+    .detalhe-produto > figure.pp-carrossel + article {
+        position: relative !important;
+        display: block !important;
+        clear: both !important;
+        width: 100% !important;
+        margin-top: 5rem !important;
+        top: auto !important;
+        transform: none !important;
+    }
+
+    .detalhe-produto .kicker,
+    .detalhe-produto .kicker.escondido4,
+    .detalhe-produto [class*="kicker"] {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        clear: both !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        top: auto !important;
+    }
+
+    .detalhe-produto > figure.pp-carrossel .kicker,
+    .detalhe-produto > figure.pp-carrossel [class*="kicker"],
+    .detalhe-produto > figure.pp-carrossel .escondido4,
+    .detalhe-produto > figure.pp-carrossel [class*="escondido4"],
+    .detalhe-produto > figure.pp-carrossel *:has(> .kicker),
+    .detalhe-produto > figure.pp-carrossel *:has(> [class*="kicker"]) {
+        background: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .detalhe-produto article h1,
+    .detalhe-produto article h2,
+    .detalhe-produto article h3 {
+        position: relative !important;
+        display: block !important;
+        clear: both !important;
+        margin-top: 0.8rem !important;
+        top: auto !important;
+    }
+}
 
 /* =====================================
   GALERIA DE CARPETES
