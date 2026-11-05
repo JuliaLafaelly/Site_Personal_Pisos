@@ -313,6 +313,53 @@ A conversa também ajudou o grupo a compreender melhor a identidade da empresa e
 
 ![Imagem realizada na loja](assets/imagens/nosNaLoja.jpeg)
 
+## Domínio
+
+O domínio escolhido pelo grupo para representar a organização Personal Pisos é:
+
+**lojaspersonalpisos.com.br**
+
+A escolha foi feita porque o endereço contém o nome principal da empresa, é simples de memorizar e possui a extensão `.com.br`, adequada para uma organização que atua no mercado brasileiro.
+
+O domínio próprio contribuirá para fortalecer a identidade digital da empresa, facilitar a divulgação do website e transmitir maior profissionalismo e confiança aos clientes.
+
+**Pesquisa de disponibilidade**
+
+**Disponibilidade:** a pesquisa no Registro.br mostrou que o domínio está disponível para registro, ao preço de R$ 40,00 por 1 ano, R$ 76,00 por 2 anos ou R$ 184,00 por 5 anos (valores no dia da pesquisa).
+
+**Comprovação da pesquisa:**
+
+![Comprovação da pesquisa](assets/imagens/registro.png)
+
+Atualmente, o website está hospedado gratuitamente pelo GitHub Pages, no seguinte endereço:
+
+https://julialafaelly.github.io/Site_Personal_Pisos/
+
+Após a aquisição do domínio próprio, será possível substituir o endereço atual pelo domínio personalizado, mantendo a hospedagem no GitHub Pages.
+
+**Por que esse domínio?**
+
+O domínio lojaspersonalpisos.com.br foi escolhido porque contém o nome principal da organização, facilitando sua identificação e memorização pelos clientes. A extensão .com.br transmite profissionalismo e é adequada para uma empresa que atua no mercado brasileiro. Além disso, o endereço é curto, fácil de digitar e está diretamente relacionado ao segmento de pisos e revestimentos, fortalecendo a identidade digital da Personal Pisos.
+
+**Processo de aquisição**
+
+- Pesquisar personalpisos.com.br no Registro.br 
+
+- Criar o cadastro do titular utilizando CPF ou CNPJ da própria empresa.
+
+- Escolher o prazo de registro e realizar o pagamento.
+
+- Configurar o DNS e o arquivo CNAME para conectar o domínio ao GitHub Pages.
+
+- Ativar o HTTPS e testar o acesso ao site pelo novo endereço.
+
+**Resultado esperado**
+
+Com a utilização de um domínio próprio, a Personal Pisos e Carpetes terá um endereço eletrônico mais profissional e fácil de divulgar.
+
+Essa mudança facilitará o acesso dos clientes ao website, contribuirá para o reconhecimento da marca e fortalecerá a presença digital da organização.
+
+
 ## Reflexão do grupo sobre o resultado e os aprendizados
 
 Nas Entregas 1 e 2, desenvolvemos um site de 10 páginas interligadas para apresentar a empresa, seus produtos e seus serviços. Na primeira etapa, aprendemos a organizar o conteúdo com HTML semântico, criar formulários com validação nativa e incluir recursos de áudio e vídeo. A validação no W3C também nos ajudou a identificar e corrigir problemas na estrutura das páginas.
