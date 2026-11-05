@@ -296,7 +296,7 @@ A IA foi utilizada como apoio à análise, não como fonte única: o grupo revis
 
 ## Contato com o responsável pela organização
 
-O contato com o responsável pela Personal Pisos e Carpetes foi realizado por meio de:
+O contato com o responsável pela Personal Pisos foi realizado por meio de:
 
 - **Modalidade do contato:** Presencial
 - **Data:** 22/08/2026
@@ -355,7 +355,7 @@ O domínio lojaspersonalpisos.com.br foi escolhido porque contém o nome princip
 
 **Resultado esperado**
 
-Com a utilização de um domínio próprio, a Personal Pisos e Carpetes terá um endereço eletrônico mais profissional e fácil de divulgar.
+Com a utilização de um domínio próprio, a Personal Pisos terá um endereço eletrônico mais profissional e fácil de divulgar.
 
 Essa mudança facilitará o acesso dos clientes ao website, contribuirá para o reconhecimento da marca e fortalecerá a presença digital da organização.
 
