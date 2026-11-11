@@ -15,6 +15,10 @@ O website está hospedado no GitHub Pages e pode ser acessado pelo link:
 
 [https://julialafaelly.github.io/Site_Personal_Pisos/]
 
+## Apresentação da A2
+
+[https://youtu.be/F6parE0R1J0]
+
 ## Organização escolhida
 
 A organização escolhida para o desenvolvimento do projeto foi a **Personal Pisos**, empresa que atua no segmento de consultoria e decoração de interiores.
